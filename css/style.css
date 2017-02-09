@@ -1,1 +1,8 @@
-ccdecdxcecdce
+body{
+  background-color: #333333;
+}
+
+#titulo_principal{
+  color: #FFF;
+  font-family: sans-serif;
+}
