@@ -17,6 +17,30 @@
 
     <script src="js/bootstrap.min.js"></script>
 
+    <style>
+      .logo {
+          font-size: 200px;
+      }
+      @media screen and (max-width: 768px) {
+          .col-sm-4 {
+              text-align: center;
+              margin: 25px 0;
+          }
+      }
+    </style>
+    <script>
+    // Codigo JavaScript para ventana MODAL Vision
+      $("#myModal").on("show.bs.modal", function(e) {
+        var link = $(e.relatedTarget);
+        $(this).find(".modal-body").load(link.attr("href"));
+      });
+
+      $("#myModal2").on("show.bs.modal", function(e) {
+        var link = $(e.relatedTarget);
+        $(this).find(".modal-body").load(link.attr("href"));
+      });
+    </script>
+
   </head>
 
   <body>
@@ -47,5 +71,117 @@
         </ul>
       </div>
     </nav>
+
+    <br/>
+
+    <!--Aquí empieza el acerca de...-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-9">
+          <h1>Acerca de Grupo CCRed</h1>
+          <h3 align="justify"><strong>GRUPO CCRED</strong> es una empresa orgullosamente mexicana fundada en 2001, con un fuerte compromiso y actitud de servicio hacia sus clientes.
+          <br/> Es una empresa sólida, fuerte que ha sobrevivido los embates económicos y sociales, gracias al compromiso y lealtad generada de nuestros clientes, que con su confianza se ha convertido en nuestra tarjeta de presentación.</h3>
+        </div>
+        <div class="col-lg-3">
+          <center><img class="img-thumbnail" src="img/LogoCCred.png" /></center>
+        </div>
+      </div>
+
+      <hr/>
+
+    </div>
+
+    <br/>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <center><img class="img-thumbnail" src="img/logoASISA.png" /></center>
+        </div>
+        <div class="col-lg-9">
+          <h3 align="justify"><strong>ASISA TELECOMUNICACIONES S.A DE C.V</strong> ofrece servicios relacionados con recursos renovables, sustentabilidad y calidad de energía.</h3>
+        </div>
+      </div>
+
+      <hr/>
+      <br/>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <center><img class="img-thumbnail" src="img/logoCYT.png" /></center>
+        </div>
+        <div class="col-lg-9">
+          <h3 align="justify"><strong>CC RED CABLEADO Y TELECOM S.A DE C.V</strong> ofrece consultoría especializada, con amplia experiencia en el servicio de mantenimiento de redes de voz y datos, así como cableado estructurado.</h3>
+        </div>
+      </div>
+
+      <br/>
+
+      <div class="row">
+        <div class="col-lg-6">
+        <!-- Link para mandar llamar al modal Misión -->
+          <center>
+            <a href="remoteContent.html" data-toggle="modal" data-target="#myModal" data-remote="false" class="btn btn-primary btn-xl">
+              Mision
+            </a>
+          </center>
+          <!-- Ejemplo del modal Misión Bootstrap -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title" id="myModalLabel">Misión Grupo CCred</h1>
+              </div>
+              <div class="modal-body">
+                <h4>
+                  <p align="justify">
+                    Integrar servicios y tecnología en soluciones completas a la medida de nuestros clientes, detectando las necesidades y requerimientos puntuales, dando soluciones basadas en el costo beneficio y proporcionando herramientas de cadena de valor dentro de la organización, a través de gran capacidad de respuesta y experiencia en el mercado de las telecomunicaciones.
+                  </p>
+                </h4>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+          <!-- Link para mandar llamar al modal Visión-->
+          <div class="col-lg-6">
+            <center>
+              <a href="remoteContent.html" data-toggle="modal" data-target="#myModal2" data-remote="false" class="btn btn-primary btn-xl">
+                Vision
+              </a>
+            </center>
+            <!-- Ejemplo del modal Visión Bootstrap -->
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h1 class="modal-title" id="myModalLabel">Visión Grupo CCred</h1>
+                </div>
+                <div class="modal-body">
+                  <h4>
+                    <p align="justify">
+                      En Grupo CCRED deseamos ser la mejor empresa de servicios tecnológicos y capacitación empresarial en el mercado nacional, así como crecer llegando a tener el liderazgo y competitividad que requieren nuestros clientes.
+                    </p>
+                  </h4>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <br/>
+
   </body>
 </html>

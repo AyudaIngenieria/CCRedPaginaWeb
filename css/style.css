@@ -34,3 +34,17 @@ nav{
 .navbar .navbar-collapse {
   text-align: center;
 }
+
+.btn-xl {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 400px;
+
+.tel{
+ font-size: 300px;
+}
+
+.emp{
+ font-size: 300px;
+}
