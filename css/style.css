@@ -53,3 +53,17 @@ nav{
 .ban{
  font-size: 30px;
 }
+
+.btn-color{
+  color:#FFF;
+  background-color: #333333;
+}
+
+.btn-color:hover{
+  color:#FFF;
+  background-color: #000;
+}
+
+li:last-child {
+  float:right ;
+}
