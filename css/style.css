@@ -59,3 +59,7 @@ nav{
   color:#FFF;
   background-color: #000;
 }
+
+li:last-child {
+  float:right ;
+}
