@@ -15,7 +15,7 @@ mysqli_select_db($connect,"ccred_database");
 $sql = "INSERT INTO noticias (titulo, autor, categoria, noticia,fecha)
 VALUES ('$titulo', '$autor', '$categoria', '$articulo', NOW());";
 
-if (mysql_query($sql)) {
+if (mysqli_query($sql)) {
     echo "New record created successfully";
 } else {
     echo "Error:" . $sql . "<br>";
