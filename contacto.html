@@ -3,20 +3,15 @@
     <title>
       Grupo CCRed - Contacto
     </title>
-
     <!--Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!--Estilos Modificados-->
     <link href="css/style.css" rel="stylesheet">
-
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
-
     <script src="js/bootstrap.min.js"></script>
-
   </head>
 
   <body>
@@ -49,176 +44,151 @@
     </nav>
 
   <!-- Inicia el formulario -->
-    <div class="container">
-    <form class="form-horizontal" action=" " method="post"  id="contact_form">
-    <fieldset>
+    <div class="container-fluid">
+      <form class="form-horizontal" action=" " method="post"  id="contact_form">
+        <fieldset>
+          <!-- Form Name -->
+          <legend><h1>Contacto</h1></legend>
+        </fieldset>
+          <!-- Text input-->
+        <div class="row">
+          <div class="col-lg-6">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="control-label col-xs-4">Nombre(s):</label>
+                  <div class="col-xs-8 inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                      <input  name="nombre" placeholder="Nombre" class="form-control"  type="text">
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                <label class="control-label col-xs-4" >Apellido(s):</label>
+                  <div class="col-xs-8 inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                      <input name="apellido" placeholder="Apellido" class="form-control"  type="text">
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                <label class="control-label col-xs-4">Correo electrónico:</label>
+                  <div class="col-xs-8 inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                      <input name="correo" placeholder="Correo electronico" class="form-control"  type="text">
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                <label class="control-label col-xs-4">Número de teléfono:</label>
+                  <div class="col-xs-8 inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                      <input name="telefono" placeholder="Número de teléfono" class="form-control" type="text">
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                <label class="control-label col-xs-4">Ciudad:</label>
+                  <div class="col-xs-8 inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                      <input name="ciudad" placeholder="Ciudad" class="form-control"  type="text">
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                <label class="control-label col-xs-4">Estado:</label>
+                  <div class="col-xs-8 selectContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="estado" class="form-control selectpicker" >
+                      <option value=" ">Por favor, selecciona tu estado</option>
+                      <option>Aguascalientes</option>
+                      <option>Baja California</option>
+                      <option>Baja California Sur</option>
+                      <option>Campeche</option>
+                      <option>Chiapas</option>
+                      <option>Chihuahua</option>
+                      <option>Ciudad de México</option>
+                      <option>Colima</option>
+                      <option>Durango</option>
+                      <option>Estado de México</option>
+                      <option>Guanajuato</option>
+                      <option>Guerrero</option>
+                      <option>Hidalgo</option>
+                      <option>Jalisco</option>
+                      <option>Michoacán</option>
+                      <option>Morelos</option>
+                      <option>Nayarit</option>
+                      <option>Nuevo León</option>
+                      <option>Oaxaca</option>
+                      <option>Puebla</option>
+                      <option>Queretaro</option>
+                      <option>Quintana Roo</option>
+                      <option>San Luis Potosí</option>
+                      <option>Sinaloa</option>
+                      <option>Sonora</option>
+                      <option>Tabasco</option>
+                      <option>Tamaulipas</option>
+                      <option>Tlaxcala</option>
+                      <option>Veracruz</option>
+                      <option>Yucatán</option>
+                      <option>Zacatecas</option>
+                    </select>
+                  </div>
+                </div>
+                <br>
+                <br>
+              <label class="control-label col-xs-4">C.P:</label>
+                <div class="col-xs-8 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                  <input name="codigo_postal" placeholder="Código Postal" class="form-control"  type="text">
+                </div>
+              </div>
+              <br>
+              <br>
+            <label class="control-label col-xs-4">Asunto:</label>
+              <div class="col-xs-8 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+              	  <textarea class="asunto" name="comment" placeholder=""></textarea>
+                </div>
+              </div>
+              <br>
+              <br>
+              <br>
+            <label class="control-label col-xs-4">Mensaje:</label>
+              <div class="col-xs-8 inputGroupContainer">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                  <textarea class="mensaje" name="comment" placeholder=""></textarea>
+                </div>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="form-group">
+                <div class="col-xs-offset-3 col-xs-9">
+                  <button type="submit" class="btn btn-md btn-color">Enviar <span class="glyphicon glyphicon-send"></span></button>
+                  <button type="reset" class="btn btn-md btn-color">Borrar <span class="glyphicon glyphicon-erase"></span></button>
+                </div>
+              </div>
+              <br>
+              <br>
+            </div><!--Div form-group-->
+          </div><!--Div col-lg-6 parte 1-->
 
-    <!-- Form Name -->
-    <legend><h1>Contacto</h1></legend>
-
-    <!-- Text input-->
-
-<div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6">
-      <form class="form-horizontal">
-        <div class="form-group">
-
-      <label class="control-label col-xs-4">Nombre(s):</label>
-        <div class="col-xs-8 inputGroupContainer">
-        <div class="input-group">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-      <input  name="nombre" placeholder="Nombre" class="form-control"  type="text">
-        </div>
-      </div>
-
-
-<br>
-<br>
-
-      <label class="control-label col-xs-4" >Apellido(s):</label>
-        <div class="col-xs-8 inputGroupContainer">
-        <div class="input-group">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-      <input name="apellido" placeholder="Apellido" class="form-control"  type="text">
-        </div>
-        </div>
-
-<br>
-<br>
-
-      <label class="control-label col-xs-4">Correo electrónico:</label>
-        <div class="col-xs-8 inputGroupContainer">
-        <div class="input-group">
-      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-      <input name="correo" placeholder="Correo electronico" class="form-control"  type="text">
-        </div>
-        </div>
-
-<br>
-<br>
-
-      <label class="control-label col-xs-4">Número de teléfono:</label>
-        <div class="col-xs-8 inputGroupContainer">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-      <input name="telefono" placeholder="Número de teléfono" class="form-control" type="text">
-        </div>
-        </div>
-
-<br>
-<br>
-
-      <label class="control-label col-xs-4">Ciudad:</label>
-        <div class="col-xs-8 inputGroupContainer">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-      <input name="ciudad" placeholder="Ciudad" class="form-control"  type="text">
-        </div>
-        </div>
-
-<br>
-<br>
-
-      <label class="control-label col-xs-4">Estado:</label>
-        <div class="col-xs-8 selectContainer">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-        <select name="estado" class="form-control selectpicker" >
-          <option value=" ">Por favor, selecciona tu estado</option>
-          <option>Aguascalientes</option>
-          <option>Baja California</option>
-          <option>Baja California Sur</option>
-          <option>Campeche</option>
-          <option>Chiapas</option>
-          <option>Chihuahua</option>
-          <option>Ciudad de México</option>
-          <option>Colima</option>
-          <option>Durango</option>
-          <option>Estado de México</option>
-          <option>Guanajuato</option>
-          <option>Guerrero</option>
-          <option>Hidalgo</option>
-          <option>Jalisco</option>
-          <option>Michoacán</option>
-          <option>Morelos</option>
-          <option>Nayarit</option>
-          <option>Nuevo León</option>
-          <option>Oaxaca</option>
-          <option>Puebla</option>
-          <option>Queretaro</option>
-          <option>Quintana Roo</option>
-          <option>San Luis Potosí</option>
-          <option>Sinaloa</option>
-          <option>Sonora</option>
-          <option>Tabasco</option>
-          <option>Tamaulipas</option>
-          <option>Tlaxcala</option>
-          <option>Veracruz</option>
-          <option>Yucatán</option>
-          <option>Zacatecas</option>
-        </select>
-      </div>
-    </div>
-
-<br>
-<br>
-
-      <label class="control-label col-xs-4">C.P:</label>
-        <div class="col-xs-8 inputGroupContainer">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-      <input name="codigo_postal" placeholder="Código Postal" class="form-control"  type="text">
-        </div>
-        </div>
-
-<br>
-<br>
-
-      <label class="control-label col-xs-4">Asunto:</label>
-        <div class="col-xs-8 inputGroupContainer">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-            	<textarea class="asunto" name="comment" placeholder=""></textarea>
-      </div>
-      </div>
-
-<br>
-<br>
-<br>
-
-
-      <label class="control-label col-xs-4">Mensaje:</label>
-        <div class="col-xs-8 inputGroupContainer">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-              <textarea class="mensaje" name="comment" placeholder=""></textarea>
-
-      </div>
-      </div>
-
-<br>
-<br>
-<br>
-
-      <div class="form-group">
-      <div class="col-xs-offset-3 col-xs-9">
-        <button type="submit" class="btn btn-md btn-color">Enviar <span class="glyphicon glyphicon-send"></span></button>
-        <button type="reset" class="btn btn-md btn-color">Borrar <span class="glyphicon glyphicon-erase"></span></button>
-      </div>
-      </div>
-
-      <br>
-      <br>
-
-</div>
-</div>
-</div>
-
-    </fieldset>
-    </form>
-</div>
-
-
-</body>
+          <div class="col-lg-6">
+            <center>
+              <img src="img/contacto.png" alt="contacto" />
+            </center>
+          </div><!--Div col-lg-6 parte 2-->
+        </div><!--Div row-->
+      </form>
+    </div> <!--Div del container-fluid-->
+  </body>
 </html>

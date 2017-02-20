@@ -18,7 +18,6 @@ VALUES ('$titulo', '$autor', '$categoria', '$articulo', NOW());";
 if (mysql_query($sql)) {
     echo "New record created successfully";
 } else {
-    echo "Error: " . $sql . "<br>";
+    echo "Error:" . $sql . "<br>";
 }
-echo $_POST['titulo'];
 ?>
