@@ -59,13 +59,13 @@
 
     <!--Recogemos las consultas en un array y las mostramos-->
     <?php
-while($row=mysql_fetch_array($result))
-{
-echo '<h2>'.$row['titulo'].'</h2><br><p>'.$row['noticia'].'</p><br/>'.$row['autor'].'|'.$row['fecha'].'| '.$row['categoria'].' |
-<a href="ver.php?id='.$row['id_noticia'].'">comentarios()</a> |
-<a href="editar.php?id='.$row['id_noticia'].'">editar</a><br/><br /><br /><br />';
-}
-mysql_free_result($result)
-?>
+      while($row=mysql_fetch_array($result))
+      {
+      echo '<h2>'.$row['titulo'].'</h2><br><p>'.$row['noticia'].'</p><br/>'.$row['autor'].'|'.$row['fecha'].'| '.$row['categoria'].' |
+      <a href="ver.php?id='.$row['id_noticia'].'">comentarios()</a> |
+      <a href="editar.php?id='.$row['id_noticia'].'">editar</a><br/><br /><br /><br />';
+      }
+      mysql_free_result($result)
+    ?>
   </body>
 </html>
