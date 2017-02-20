@@ -5,7 +5,7 @@ $autor=$_POST['autor'];
 $categoria=$_POST['categoria'];
 $articulo=$_POST['articulo'];
 //conectamos a la base
-$connect = mysql_connect("localhost","root","") or die("No se pudo conectar:".mysql_error());
+$connect = mysqli_connect("localhost","root","") or die("No se pudo conectar:".mysql_error());
 
 //Seleccionamos la base
 mysql_select_db("ccred_database",$connect);

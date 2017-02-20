@@ -6,7 +6,7 @@
 
     <?php
       //conectamos a la base
-      $connect = mysql_connect("localhost","root","") or die('No se pudo conectar: '.mysql_error());
+      $connect = mysqli_connect("localhost","root","") or die('No se pudo conectar: '.mysql_error());
       echo "Conectado a la base de datos";
       //Seleccionamos la base
       mysql_select_db("ccred_database",$connect) or die ('No se pudo seleccionar la base de datos: '.mysql_error()); //hacemos las consultas
