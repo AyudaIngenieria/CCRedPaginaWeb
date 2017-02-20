@@ -3,6 +3,16 @@
     <title>
       Grupo CCred - Servicios
     </title>
+
+    <?php
+      //conectamos a la base
+      $connect = mysql_connect("localhost","root","") or die('No se pudo conectar: '.mysql_error());
+      echo "Conectado a la base de datos";
+      //Seleccionamos la base
+      mysql_select_db("ccred_database",$connect) or die ('No se pudo seleccionar la base de datos: '.mysql_error()); //hacemos las consultas
+      $result=mysql_query("select * from noticias order by fecha Desc", $connect);
+      $totalregistros=mysql_num_rows($result);
+      ?>
     <!--Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -46,5 +56,16 @@
         </ul>
       </div>
     </nav>
+
+    <!--Recogemos las consultas en un array y las mostramos-->
+    <?php
+while($row=mysql_fetch_array($result))
+{
+echo '<h2>'.$row['titulo'].'<br><p>'.$row['noticia'].'</p><br/>'.$row['autor'].'|'.$row['fecha'].'| '.$row['categoria'].' |
+<a href="ver.php?id='.$row['id_noticia'].'">comentarios()</a> |
+<a href="editar.php?id='.$row['id_noticia'].'">editar</a>';
+}
+mysql_free_result($result)
+?>
   </body>
 </html>
