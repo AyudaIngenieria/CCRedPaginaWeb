@@ -11,7 +11,7 @@
       //Seleccionamos la base
       mysqli_select_db($connect,"ccred_database") or die ('No se pudo seleccionar la base de datos: '.mysql_error()); //hacemos las consultas
       $result=mysql_query("select * from noticias order by fecha Desc", $connect);
-      $totalregistros=mysql_num_rows($result);
+      $totalregistros=mysqli_num_rows($result);
       ?>
     <!--Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -59,13 +59,13 @@
 
     <!--Recogemos las consultas en un array y las mostramos-->
     <?php
-      while($row=mysql_fetch_array($result))
+      while($row=mysqli_fetch_array($result))
       {
       echo '<h2>'.$row['titulo'].'</h2><br><p>'.$row['noticia'].'</p><br/>'.$row['autor'].'|'.$row['fecha'].'| '.$row['categoria'].' |
       <a href="ver.php?id='.$row['id_noticia'].'">comentarios()</a> |
       <a href="editar.php?id='.$row['id_noticia'].'">editar</a><br/><br /><br /><br />';
       }
-      mysql_free_result($result)
+      mysqli_free_result($result)
     ?>
   </body>
 </html>
