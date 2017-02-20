@@ -10,7 +10,7 @@
       echo "Conectado a la base de datos";
       //Seleccionamos la base
       mysqli_select_db($connect,"ccred_database") or die ('No se pudo seleccionar la base de datos: '.mysql_error()); //hacemos las consultas
-      $result=mysqli_query("select * from noticias order by fecha Desc", $connect);
+      $result=mysqli_query($connect,"select * from noticias order by fecha Desc");
       $totalregistros=mysqli_num_rows($result);
       ?>
     <!--Bootstrap-->
