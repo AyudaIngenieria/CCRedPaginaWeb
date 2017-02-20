@@ -8,7 +8,7 @@ $articulo=$_POST['articulo'];
 $connect = mysqli_connect("localhost","root","") or die("No se pudo conectar:".mysql_error());
 
 //Seleccionamos la base
-mysqli_select_db("ccred_database",$connect);
+mysqli_select_db($connect,"ccred_database");
 
 //insertamos los registros almacenados en las variables
 
