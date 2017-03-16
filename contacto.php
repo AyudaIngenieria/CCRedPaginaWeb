@@ -45,7 +45,7 @@
 
   <!-- Inicia el formulario -->
     <div class="container-fluid">
-      <form class="form-horizontal" action="procesaenv.php" method="post"  id="contact_form">
+      <form class="form-horizontal" action="procesaenv.php" method="post">
         <fieldset>
           <!-- Form Name -->
           <legend><h1>Contacto</h1></legend>
@@ -159,7 +159,7 @@
               <div class="col-xs-8 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-              	  <textarea class="form-control" name="asunto" placeholder=""></textarea>
+              	  <textarea class="form-control" name="asunto" placeholder="" ></textarea>
                 </div>
               </div>
               <br>

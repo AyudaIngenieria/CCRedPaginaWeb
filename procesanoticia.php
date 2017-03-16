@@ -4,7 +4,7 @@ $titulo=$_POST['titulo'];
 $autor=$_POST['autor'];
 $categoria=$_POST['categoria'];
 $articulo=$_POST['articulo'];
-//conectamos a la base
+//conectamos a la base 
 $connect = mysqli_connect("localhost","root","") or die("No se pudo conectar:".mysql_error());
 
 //Seleccionamos la base
