@@ -9,8 +9,8 @@
       $connect = mysqli_connect("localhost","root","") or die('No se pudo conectar: '.mysql_error());
       echo "Conectado a la base de datos";
       //Seleccionamos la base
-      mysqli_select_db($connect,"ccred_database") or die ('No se pudo seleccionar la base de datos: '.mysql_error()); //hacemos las consultas
-      $result=mysqli_query($connect,"select * from noticias order by fecha Desc");
+      mysqli_select_db($connect,"ccred_conform") or die ('No se pudo seleccionar la base de datos: '.mysql_error()); //hacemos las consultas
+      $result=mysqli_query($connect,"select * from registro order by id_registro Desc");
       $totalregistros=mysqli_num_rows($result);
       ?>
     <!--Bootstrap-->
@@ -61,9 +61,9 @@
     <?php
       while($row=mysqli_fetch_array($result))
       {
-      echo '<h2>'.$row['titulo'].'</h2><br><p>'.$row['noticia'].'</p><br/>'.$row['autor'].'|'.$row['fecha'].'| '.$row['categoria'].' |
-      <a href="ver.php?id='.$row['id_noticia'].'">comentarios()</a> |
-      <a href="editar.php?id='.$row['id_noticia'].'">editar</a><br/><br /><br /><br />';
+      echo '<h2>'.$row['nombre'].'</h2><br><p>'.$row['apellido'].'</p><br/>'.$row['correo'].'|'.$row['telefono'].'| '.$row['ciudad'].' |
+      <a href="ver.php?id='.$row['id_registro'].'">comentarios()</a> |
+      <a href="editar.php?id='.$row['id_registro'].'">editar</a><br/><br /><br /><br />';
       }
       mysqli_free_result($result)
     ?>

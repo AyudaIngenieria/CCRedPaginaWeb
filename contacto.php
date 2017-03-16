@@ -45,7 +45,7 @@
 
   <!-- Inicia el formulario -->
     <div class="container-fluid">
-      <form class="form-horizontal" action="procesaenv.php" method="post">
+      <form action="procesaenv.php" method="post" class="form-horizontal">
         <fieldset>
           <!-- Form Name -->
           <legend><h1>Contacto</h1></legend>
@@ -109,7 +109,7 @@
                   <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
                     <select name="estado" class="form-control selectpicker" >
-                      <option value=" ">Por favor, selecciona tu estado</option>
+                      <option value=" ">Por favor, seleccione el estado</option>
                       <option>Aguascalientes</option>
                       <option>Baja California</option>
                       <option>Baja California Sur</option>
@@ -176,7 +176,7 @@
               <br>
               <br>
               <div class="form-group">
-                <div class="col-xs-offset-5 col-xs-7">
+                <div class="col-xs-offset-6 col-xs-6">
                   <button type="submit" class="btn btn-md btn-color">Enviar <span class="glyphicon glyphicon-send"></span></button>
                   <button type="reset" class="btn btn-md btn-color">Borrar <span class="glyphicon glyphicon-erase"></span></button>
                 </div>

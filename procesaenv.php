@@ -18,8 +18,8 @@ mysqli_select_db($connect,"ccred_conform");
 
 //insertamos los registros almacenados en las variables
 
-$sql = "INSERT INTO registros (nombre, apellido, correo, telefono, ciudad, estado, cod_postal, asunto, mensaje)
-VALUES ('$nombre', '$apellido', '$correo', '$telefono', '$ciudad', '$estado', '$cod_postal', '$asunto', '$mensaje')";
+$sql = "INSERT INTO registro (nombre, apellido, correo, telefono, ciudad, estado, cod_postal, asunto, mensaje)
+VALUES ('$nombre', '$apellido', '$correo', '$telefono', '$ciudad', '$estado', '$cod_postal', '$asunto', '$mensaje');";
 
 if (mysqli_query($connect, $sql)) {
     echo "New record created successfully";
