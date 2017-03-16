@@ -1,4 +1,4 @@
-<html>
+<html>
   <head>
     <title>
       Grupo CCRed - Contacto
@@ -37,16 +37,15 @@
            <a href="tienda.html">Tienda</a>
          </li>
          <li class="active">
-           <a href="contacto.html">Contacto</a>
+           <a href="contacto.php">Contacto</a>
          </li>
        </ul>
      </div>
    </nav>
 
-
   <!-- Inicia el formulario -->
     <div class="container-fluid">
-      <form class="form-horizontal" action="" method="post"  id="contact_form">
+      <form class="form-horizontal" action="procesaenv.php" method="post"  id="contact_form">
         <fieldset>
           <!-- Form Name -->
           <legend><h1>Contacto</h1></legend>
@@ -151,7 +150,7 @@
                 <div class="col-xs-8 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                  <input name="codigo_postal" placeholder="Código Postal" class="form-control"  type="text">
+                  <input name="cod_postal" placeholder="Código Postal" class="form-control"  type="">
                 </div>
               </div>
               <br>
@@ -160,7 +159,7 @@
               <div class="col-xs-8 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-              	  <textarea class="asunto" name="comment" placeholder=""></textarea>
+              	  <textarea class="form-control" name="asunto" placeholder=""></textarea>
                 </div>
               </div>
               <br>
@@ -170,7 +169,7 @@
               <div class="col-xs-8 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                  <textarea class="mensaje" name="comment" placeholder=""></textarea>
+                  <textarea class="form-control" name="mensaje" placeholder=""></textarea>
                 </div>
               </div>
               <br>
@@ -291,6 +290,7 @@
               </div>
 
       </form>
+    </form>
     </div> <!--Div del container-fluid-->
     <a href="#"><img src="img/contacto/boton.png" title="Ir arriba" style="position: fixed; bottom: 10px; right: 2%;"  width='30' height='30'  /></a>
   </body>
