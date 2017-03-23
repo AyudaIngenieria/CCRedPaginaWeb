@@ -177,7 +177,7 @@
               <br>
               <div class="form-group">
                 <div class="col-xs-offset-6 col-xs-6">
-                  <button type="submit" class="btn btn-md btn-color">Enviar <span class="glyphicon glyphicon-send"></span></button>
+                  <button type="submit" value="Publicar "class="btn btn-md btn-color">Enviar <span class="glyphicon glyphicon-send"></span></button>
                   <button type="reset" class="btn btn-md btn-color">Borrar <span class="glyphicon glyphicon-erase"></span></button>
                 </div>
               </div>
