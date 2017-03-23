@@ -150,7 +150,7 @@
                 <div class="col-xs-8 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                  <input name="cod_postal" placeholder="Código Postal" class="form-control"  type="">
+                  <input name="cod_postal" placeholder="Código Postal" class="form-control"  type="text">
                 </div>
               </div>
               <br>
@@ -177,7 +177,7 @@
               <br>
               <div class="form-group">
                 <div class="col-xs-offset-6 col-xs-6">
-                  <button type="submit" value="Publicar "class="btn btn-md btn-color">Enviar <span class="glyphicon glyphicon-send"></span></button>
+                  <button type="submit" class="btn btn-md btn-color">Enviar <span class="glyphicon glyphicon-send"></span></button>
                   <button type="reset" class="btn btn-md btn-color">Borrar <span class="glyphicon glyphicon-erase"></span></button>
                 </div>
               </div>
@@ -185,6 +185,8 @@
               <br>
             </div><!--Div form-group-->
           </div><!--Div col-lg-6 parte 1-->
+        </form>
+      </form>
 
           <div class="col-lg-6">
             <br>
@@ -289,8 +291,6 @@
                 </div>
               </div>
 
-      </form>
-    </form>
     </div> <!--Div del container-fluid-->
     <a href="#"><img src="img/contacto/boton.png" title="Ir arriba" style="position: fixed; bottom: 10px; right: 2%;"  width='30' height='30'  /></a>
   </body>

@@ -20,13 +20,11 @@ mysqli_select_db($connect,"ccred_conform");
 
 $sql="INSERT INTO registro (nombre, apellido, correo, telefono, ciudad, estado, cod_postal, asunto, mensaje) VALUES ('$nombre', '$apellido', '$correo', '$telefono', '$ciudad', '$estado', '$cod_postal', '$asunto', '$mensaje')";
 
-
-
 if (mysqli_query($connect, $sql)){
 			echo "Tus datos han sido registrados con exito";
 		}
 		else {
-			echo "Error";
+			echo "Error" .$sql."<br>";
 		}
 
 ?>
