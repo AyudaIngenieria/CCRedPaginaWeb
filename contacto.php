@@ -39,6 +39,9 @@
          <li class="active">
            <a href="contacto.php">Contacto</a>
          </li>
+         <li>
+           <a href="login.php">Login</a>
+         </li>
        </ul>
      </div>
    </nav>
@@ -50,12 +53,12 @@
           <!-- Form Name -->
           <legend><h1>Contacto</h1></legend>
           <h4>Gracias por interesarse en nuestros servicios. </h4>
-          <h4>  Por favor, pon tus datos y con gusto uno de nuestros representantes se pondrá en contacto contigo.</h4>
+          <h4>Por favor, pon tus datos y con gusto uno de nuestros representantes se pondrá en contacto contigo.</h4>
         </fieldset>
           <!-- Text input-->
         <div class="row">
           <div class="col-lg-6">
-            <form class="form-horizontal">
+            <form action="procesaenv.php" method="post" class="form-horizontal">
               <div class="form-group">
                 <br>
                 <br>
