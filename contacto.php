@@ -3,6 +3,14 @@
     <title>
       Grupo CCRed - Contacto
     </title>
+
+    <?php
+      //conectamos a la base
+      $connect = mysqli_connect("localhost","root","") or die('No se pudo conectar: '.mysql_error());
+      //Seleccionamos la base
+      mysqli_select_db($connect,"ccred_conform") or die ('No se pudo seleccionar la base de datos: '.mysql_error());
+    ?>
+
     <!--Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--Estilos Modificados-->
@@ -48,7 +56,7 @@
 
   <!-- Inicia el formulario -->
     <div class="container-fluid">
-      <form action="procesaenv.php" method="post" class="form-horizontal">
+
         <fieldset>
           <!-- Form Name -->
           <legend><h1>Contacto</h1></legend>
@@ -111,40 +119,7 @@
                   <div class="col-xs-8 selectContainer">
                   <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                    <select name="estado" class="form-control selectpicker" >
-                      <option value=" ">Por favor, seleccione el estado</option>
-                      <option>Aguascalientes</option>
-                      <option>Baja California</option>
-                      <option>Baja California Sur</option>
-                      <option>Campeche</option>
-                      <option>Chiapas</option>
-                      <option>Chihuahua</option>
-                      <option>Ciudad de México</option>
-                      <option>Colima</option>
-                      <option>Durango</option>
-                      <option>Estado de México</option>
-                      <option>Guanajuato</option>
-                      <option>Guerrero</option>
-                      <option>Hidalgo</option>
-                      <option>Jalisco</option>
-                      <option>Michoacán</option>
-                      <option>Morelos</option>
-                      <option>Nayarit</option>
-                      <option>Nuevo León</option>
-                      <option>Oaxaca</option>
-                      <option>Puebla</option>
-                      <option>Queretaro</option>
-                      <option>Quintana Roo</option>
-                      <option>San Luis Potosí</option>
-                      <option>Sinaloa</option>
-                      <option>Sonora</option>
-                      <option>Tabasco</option>
-                      <option>Tamaulipas</option>
-                      <option>Tlaxcala</option>
-                      <option>Veracruz</option>
-                      <option>Yucatán</option>
-                      <option>Zacatecas</option>
-                    </select>
+                    <input name="estado" placeholder="Estado" class="form-control" type="text">
                   </div>
                 </div>
                 <br>
@@ -162,17 +137,16 @@
               <div class="col-xs-8 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-              	  <textarea class="form-control" name="asunto" placeholder="" ></textarea>
+                  <input name="asunto" placeholder="" class="form-control"  type="text">
                 </div>
               </div>
-              <br>
               <br>
               <br>
             <label class="control-label col-xs-4">Mensaje:</label>
               <div class="col-xs-8 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                  <textarea class="form-control" name="mensaje" placeholder=""></textarea>
+                  <input name="mensaje" placeholder="" class="form-control"  type="text">
                 </div>
               </div>
               <br>
@@ -189,7 +163,7 @@
             </div><!--Div form-group-->
           </div><!--Div col-lg-6 parte 1-->
         </form>
-      </form>
+
 
           <div class="col-lg-6">
             <br>

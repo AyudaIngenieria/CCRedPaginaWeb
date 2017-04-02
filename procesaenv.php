@@ -11,7 +11,7 @@ $asunto=$_POST['asunto'];
 $mensaje=$_POST['mensaje'];
 
 //conectamos a la base
-$connect = mysqli_connect("localhost","root","") or die("No se pudo conectar:".mysql_error());
+$connect = mysqli_connect("localhost","root","") or die("No se pudo conectar:" .mysql_error());
 
 //Seleccionamos la base
 mysqli_select_db($connect,"ccred_conform");
@@ -25,7 +25,7 @@ if (mysqli_query($connect, $sql)){
 			echo "Tus datos han sido registrados con exito";
 		}
 		else {
-			echo "Error" . $sql . "<br>";
+			echo "Error" .$sql. "<br>";
 		}
 
 ?>
