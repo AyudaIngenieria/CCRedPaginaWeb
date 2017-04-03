@@ -28,6 +28,7 @@
 
 <html>
   <head>
+      <link rel="icon" href="icon/ccredico.ico" type="icon/ccredico.ico" /> 
     <title>
       Grupo CCred - Login
     </title>
