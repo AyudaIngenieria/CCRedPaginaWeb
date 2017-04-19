@@ -28,7 +28,7 @@
 
 <html>
   <head>
-      <link rel="icon" href="icon/ccredico.ico" type="icon/ccredico.ico" /> 
+      <link rel="icon" href="icon/ccredico.ico" type="icon/ccredico.ico" />
     <title>
       Grupo CCred - Login
     </title>
@@ -48,18 +48,18 @@
 
     <style>
       .panel-color{
-        background-color: #333333;
+        background-color: #080808;
       }
     </style>
 
   </head>
-  <body style="background-color: #333333">
+  <body style="background-color: #080808">
 
     <div class="container">
       <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         <div class="panel panel-color" >
           <div class="panel-heading">
-              <div class="panel-title" style="color: #FFF"><center><h2>Bienvenido a Grupo CCred</h2></center></div>
+              <div class="panel-title" style="color: #F67115"><center><h2>Bienvenid@ a Grupo CCred</h2></center></div>
           </div>
             <div style="padding-top:30px" class="panel-body" >
               <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
@@ -86,5 +86,6 @@
               </div>
    </div>
 </div>
+<center><img src="img/LogosCCRED/logoccred.png" alt="" class="" width='300' height='300'></center>
   </body>
 </html>
