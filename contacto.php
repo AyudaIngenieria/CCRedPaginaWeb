@@ -2,15 +2,10 @@
   <head>
       <link rel="icon" href="icon/ccredico.ico" type="icon/ccredico.ico" />
     <title>
-      Grupo CCRed - Contacto
+      Contacto
     </title>
 
-    <?php
-      //conectamos a la base
-      $connect = mysqli_connect("localhost","root","") or die('No se pudo conectar: '.mysql_error());
-      //Seleccionamos la base
-      mysqli_select_db($connect,"ccred_conform") or die ('No se pudo seleccionar la base de datos: '.mysql_error());
-    ?>
+
 
     <!--Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -110,10 +105,10 @@
           <h4>Gracias por interesarse en nuestros servicios. </h4>
           <h4>Por favor, pon tus datos y con gusto uno de nuestros representantes se pondrá en contacto contigo.</h4>
         </fieldset>
-          <!-- Text input-->
+          <!-- Text input/ Inicia el formulario-->
         <div class="row">
           <div class="col-lg-6">
-            <form action="procesaenv.php" method="post" class="form-horizontal">
+            <form action="formenviar.php" method="POST" class="form-horizontal">
               <div class="form-group">
                 <br>
                 <br>
@@ -121,7 +116,7 @@
                   <div class="col-xs-8 inputGroupContainer">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                      <input  name="nombre" placeholder="Nombre" class="form-control"  type="text">
+                      <input type="text"  name="nombre" placeholder="Nombre" class="form-control">
                     </div>
                   </div>
                   <br>
@@ -130,7 +125,7 @@
                   <div class="col-xs-8 inputGroupContainer">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                      <input name="apellido" placeholder="Apellido" class="form-control"  type="text">
+                      <input type="text" name="apellido" placeholder="Apellido" class="form-control">
                     </div>
                   </div>
                   <br>
@@ -139,7 +134,7 @@
                   <div class="col-xs-8 inputGroupContainer">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                      <input name="correo" placeholder="Correo electronico" class="form-control"  type="text">
+                      <input type="email" name="correo" placeholder="Correo electronico" class="form-control">
                     </div>
                   </div>
                   <br>
@@ -148,7 +143,7 @@
                   <div class="col-xs-8 inputGroupContainer">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                      <input name="telefono" placeholder="Número de teléfono" class="form-control" type="text">
+                      <input type="text" name="telefono" placeholder="Número de teléfono" class="form-control">
                     </div>
                   </div>
                   <br>
@@ -157,7 +152,7 @@
                   <div class="col-xs-8 inputGroupContainer">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                      <input name="ciudad" placeholder="Ciudad" class="form-control"  type="text">
+                      <input type="text" name="ciudad" placeholder="Ciudad" class="form-control">
                     </div>
                   </div>
                   <br>
@@ -166,7 +161,7 @@
                   <div class="col-xs-8 selectContainer">
                   <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                    <input name="estado" placeholder="Estado" class="form-control" type="text">
+                    <input type="text" name="estado" placeholder="Estado" class="form-control">
                   </div>
                 </div>
                 <br>
@@ -175,7 +170,7 @@
                 <div class="col-xs-8 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                  <input name="cod_postal" placeholder="Código Postal" class="form-control"  type="text">
+                  <input type="text" name="cod_postal" placeholder="Código Postal" class="form-control">
                 </div>
               </div>
               <br>
@@ -184,7 +179,7 @@
               <div class="col-xs-8 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                  <input name="asunto" placeholder="" class="form-control"  type="text">
+                  <input type="text" name="asunto" placeholder="" class="form-control">
                 </div>
               </div>
               <br>
@@ -193,7 +188,7 @@
               <div class="col-xs-8 inputGroupContainer">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                  <input name="mensaje" placeholder="" class="form-control"  type="text">
+                  <input type="text" name="mensaje" placeholder="" class="form-control">
                 </div>
               </div>
               <br>
