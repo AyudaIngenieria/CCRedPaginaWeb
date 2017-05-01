@@ -52,7 +52,7 @@
           <div class="col-sm-1">
             <ul class="nav navbar-nav">
               <li>
-                <a href="servicios.html">Servicios</a>
+                <a href="Noticias.html">Noticias</a>
               </li>
             </ul>
           </div>
@@ -103,7 +103,7 @@
           <!-- Form Name -->
           <legend><h1>Contacto</h1></legend>
           <h4>Gracias por interesarse en nuestros servicios. </h4>
-          <h4>Por favor, pon tus datos y con gusto uno de nuestros representantes se pondrá en contacto contigo.</h4>
+          <h4>Por favor, pon tus datos y con gusto uno de nuestros representantes se pondra en contacto contigo.</h4>
         </fieldset>
           <!-- Text input/ Inicia el formulario-->
         <div class="row">
