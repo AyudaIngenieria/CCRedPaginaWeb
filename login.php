@@ -21,7 +21,7 @@
 
          header("location: welcome.php");
       }else {
-         $error = "Tu usuario o password son invalidos";
+         $error = "Tu usuario o password son inválidos"; 
       }
    }
 ?>

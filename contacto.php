@@ -32,7 +32,7 @@
           </div>
           <div class="col-sm-1">
             <a href="index.html">
-              <img src="img/LogosCCRED/asisa.png" align="center" style="margin-top;" width="40px" height="40px">
+              <img src="img/LogosCCRED/asisablanco.png" align="center" style="margin-top;" width="40px" height="40px">
             </a>
           </div>
           <div class="col-sm-1">
