@@ -65,7 +65,7 @@
           <div class="col-sm-1">
             <ul class="nav navbar-nav">
               <li>
-                <a href="Noticias.html">Noticias</a>
+                <a href="noticias.html">Noticias</a>
               </li>
             </ul>
           </div>
