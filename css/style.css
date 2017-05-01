@@ -95,16 +95,10 @@ CSS
 	text-align: left;
 	font: normal 16px sans-serif;
 
-	padding: 25px 50px;
-	margin-top: 80px;
+	padding: 25px 70px;
+	margin-top: 0px;
 }
 
-.footer-distributed .footer-left p{
-	color:  #8f9296;
-	font-size: 14px;
-	margin: 0;
-
-}
 
 /* Footer links */
 
@@ -118,7 +112,7 @@ CSS
 }
 
 .footer-distributed p.footer-links a{
-  float: inherit;
+  float: center;
 	display:inline-block;
 	line-height: 1.5;
 	text-decoration: none;
@@ -129,23 +123,21 @@ CSS
 
 .footer-distributed .footer-right{
 	float: right;
-	margin-top: 18px;
-	max-width: 180px;
+	margin-top: -45px;
+	max-width: -45px;
 }
 
 .footer-distributed .footer-right a{
 	display: inline-block;
-	width: 35px;
-	height: 35px;
-	background-color:  #131414;
-	border-radius: 2px;
+	width: 40px;
+	height: 40px;
+	border-radius: 1px;
 
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
-	line-height: 35px;
-
-	margin-left: 3px;
+	line-height: 0px;
+	margin-left: 2px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */

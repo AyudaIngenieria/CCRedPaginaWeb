@@ -1,21 +1,34 @@
 <html>
   <head>
       <link rel="icon" href="icon/ccredico.ico" type="icon/ccredico.ico" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>
       Contacto
     </title>
 
-
-
     <!--Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <!--Estilos Modificados-->
     <link href="css/style.css" rel="stylesheet">
+
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
+
     <script src="js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="footer, links, icons" />
+
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/footer-distributed.css">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
   </head>
 
   <body>
@@ -305,12 +318,44 @@
                     <li><h3>Cancún, Quintana Roo</h3></li>
                   </ul>
                 </div>
-                <div class="col-lg-9">
-                  <center><img src="img/contacto/construccion.png" alt="construccion" class="img-rounded" width='300' height='300'></center>
-                </div>
               </div>
-
     </div> <!--Div del container-fluid-->
-    <a href="#"><img src="img/contacto/boton.png" title="Ir arriba" style="position: fixed; bottom: 10px; right: 2%;"  width='30' height='30'  /></a>
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left" align="center">
+        <a href="index.html">
+          <img src="img/LogosCCRED/logoccred.png" align="left" style="margin-bottom;" width="80px" height="80px">
+        </a>
+      </div>
+
+      <div class="footer-center" align="center">
+        <p class="footer-links" style="margin-bottom;">
+          <a href="index.html" align="center">Inicio</a>
+          ·
+          <a href="nosotros.html" align="center">Nosotros</a>
+          ·
+          <a href="noticias.php" align="center">Noticias</a>
+          ·
+          <a href="clientes.html" align="center">Clientes</a>
+          ·
+          <a href="galeria.html" align="center">Galería</a>
+          ·
+          <a href="tienda.html" align="center">Tienda</a>
+          </p>
+        <p align="center"><font color="#CEC8c4"><h6>Grupo CCred S.A de C.V &copy; Todos los derechos reservados. 2017</h6></font></p>
+      </div>
+
+      <div class="footer-right" align="center" style="margin-bottom">
+        <a href="https://www.facebook.com/GrupoCCred/"><i class="fa fa-facebook" style="color: #3B5998;"></i></a>
+        <a href="https://twitter.com/GrupoCcred"><i class="fa fa-twitter" style="color: #55ACEE;"></i></a>
+        <a href="#"><i class="fa fa-instagram" style="color: #FBAD50;"></i></a>
+        <a href="#"><i class="fa fa-youtube-play" style="color: #BB0000;"></i></a>
+      </div>
+
+    </footer>
+
+<p style="margin:-1.5% 0;"></p>
+
   </body>
 </html>
