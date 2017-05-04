@@ -158,3 +158,128 @@ CSS
 		line-height: 1.8;
 	}
 }
+
+/* CSS Tienda */
+
+.contenedor{
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #E1E1E1;
+}
+
+.table-arts{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: auto;
+  justify-content: space-between;
+}
+
+.art{
+  width: 190px;
+  height: 140px;
+  position: relative;
+  border: 1px solid rgba(0,0,0,.35);
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all .8s ease;
+  -o-transition: all .8 ease;
+  transition: all .8s ease;
+}
+
+.art:hover{
+  height: 280px;
+  -webkit-transition: all .8s ease;
+  -o-transition: all .8 ease;
+  transition: all .8s ease;
+}
+
+.art .cap-over{
+  position: absolute;
+  top: 0;
+  left: -190px;
+  width: 100%;
+  height: 140px;
+  padding: 5px 10px;
+  z-index: 5;
+}
+
+.art .cap-over a{
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.art:hover .cap-over{
+  left: 0;
+  -webkit-transition: all .8s ease;
+  -o-transition: all .8 ease;
+  transition: all .8s ease;
+}
+
+.art:hover .cap-image img{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.art .cap-image{
+  width: 190px;
+  height: 140px;
+}
+
+.art .cap-image img{
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(.8);
+  -o-filter: grayscale(.8);
+  filter: grayscale(.8);
+  -webkit-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.art .info{
+  height: 200px;
+  padding: 10px 5px;
+  position: relative;
+}
+
+.art .info p:first-child{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.art .info p:nth-child(2){
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.art .info .foot-info{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.art .info .foot-info p{
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #17AA1C;
+}
