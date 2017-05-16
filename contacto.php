@@ -80,7 +80,7 @@
             </div>
             <div class="col-sm-1">
               <ul class="nav navbar-nav">
-                <li>
+                <li class="active">
                   <a href="contacto.php">Contacto</a>
                 </li>
               </ul>
@@ -341,8 +341,8 @@
 
       <div class="footer-right" align="center" style="margin-bottom">
         <a href="https://www.facebook.com/GrupoCCred/"><i class="fa fa-facebook" style="color: #3B5998;"></i></a>
-        <a href="https://twitter.com/GrupoCcred"><i class="fa fa-twitter" style="color: #55ACEE;"></i></a>
-        <a href="#"><i class="fa fa-instagram" style="color: #FBAD50;"></i></a>
+        <a href="https://twitter.com/GrupoCCred"><i class="fa fa-twitter" style="color: #55ACEE;"></i></a>
+        <a href="https://www.instagram.com/grupoccred/"><i class="fa fa-instagram" style="color: #FBAD50;"></i></a>
         <a href="#"><i class="fa fa-youtube-play" style="color: #BB0000;"></i></a>
       </div>
 

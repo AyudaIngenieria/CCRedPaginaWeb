@@ -3,7 +3,7 @@
       <link rel="icon" href="icon/ccredico.ico" type="icon/ccredico.ico" />
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>
-      Servicios
+      Tienda
     </title>
 
     <!--Bootstrap-->
@@ -59,7 +59,7 @@
             </div>
             <div class="col-sm-1">
               <ul class="nav navbar-nav">
-                <li class="active">
+                <li>
                   <a href="servicios.html">Servicios</a>
                 </li>
               </ul>
@@ -88,7 +88,7 @@
 
             <div class="col-sm-2">
               <ul class="nav navbar-nav">
-                <li>
+                <li class="active">
                   <a href="tienda.php"><i class="glyphicon glyphicon-shopping-cart"></i></a>
                 </li>
               </ul>
@@ -122,13 +122,13 @@
             ·
             <a href="nosotros.html" align="center">Nosotros</a>
             ·
+            <a href="servicios.html" align="center">Servicios</a>
+            ·
             <a href="clientes.html" align="center">Clientes</a>
             ·
             <a href="galeria.html" align="center">Galería</a>
             ·
             <a href="contacto.php" align="center">Contacto</a>
-            ·
-            <a href="tienda.php" align="center">Tienda</a>
             </p>
           <p align="center"><font color="#CEC8c4"><h6>Grupo CCred S.A de C.V &copy; Todos los derechos reservados. 2017</h6></font></p>
         </div>
