@@ -36,12 +36,14 @@
     <nav class="navbar navbar-inverse navbar-static-top">
       <div id="navbar" class="collapse navbar-collapse">
         <div class="row">
-          <div class="col-sm-1">
+          <div class="1">
           </div>
           <div class="col-sm-2">
-            <a href="index.html">
-              <img src="img/LogosCCRED/logoblanco.png" align="center" style="margin-top;" width="50px" height="50px">
-            </a>
+            <ul class="nav navbar-nav">
+                <a href="index.html">
+                  <img src="img/LogosCCRED/logoblanco.png"  style="margin-top;" width="55px" height="50px">
+                </a>
+            </ul>
           </div>
             <div class="col-sm-1">
               <ul class="nav navbar-nav">
@@ -59,10 +61,19 @@
             </div>
             <div class="col-sm-1">
               <ul class="nav navbar-nav">
-                <li>
-                  <a href="servicios.html">Servicios</a>
-                </li>
-              </ul>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="servicios.html">Servicios</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Monitoreo de redes</a></li>
+                    <li><a href="#">Voz, Datos y Video</a></li>
+                    <li><a href="#">Optimización de la energía</a></li>
+                    <li><a href="#">Cableado estructurado</a></li>
+                    <li><a href="#">Capacitación</a></li>
+                    <li><a href="#">Seguridad</a></li>
+                    <li></li>
+                 </ul>
+               </li>
+             </ul>
             </div>
             <div class="col-sm-1">
               <ul class="nav navbar-nav">
@@ -80,6 +91,13 @@
             </div>
             <div class="col-sm-1">
               <ul class="nav navbar-nav">
+                <li>
+                  <a href="productos.html">Productos</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-1">
+              <ul class="nav navbar-nav">
                 <li class="active">
                   <a href="contacto.php">Contacto</a>
                 </li>
@@ -89,7 +107,7 @@
             <div class="col-sm-2">
               <ul class="nav navbar-nav">
                 <li>
-                  <a href="tienda.php"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+                  <a href="registro.php"><i class="glyphicon glyphicon-user"></i></a>
                 </li>
               </ul>
               <ul class="nav navbar-nav">
@@ -328,13 +346,13 @@
           ·
           <a href="nosotros.html" align="center">Nosotros</a>
           ·
-          <a href="noticias.php" align="center">Noticias</a>
+          <a href="servicios.html" align="center">Servicios</a>
           ·
           <a href="clientes.html" align="center">Clientes</a>
           ·
           <a href="galeria.html" align="center">Galería</a>
           ·
-          <a href="tienda.html" align="center">Tienda</a>
+          <a href="productos.html" align="center">Productos</a>
           </p>
         <p align="center"><font color="#CEC8c4"><h6>Grupo CCred S.A de C.V &copy; Todos los derechos reservados. 2017</h6></font></p>
       </div>
