@@ -1,7 +1,11 @@
+<?php include('conexiontienda.php');
+?>
+
 <html>
   <head>
       <link rel="icon" href="icon/ccredico.ico" type="icon/ccredico.ico" />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
     <title>
       Tienda
     </title>
@@ -102,11 +106,71 @@
         </div>
       </nav>
 
+      <form id="form1" name="form1" method="post" action="">
+      </form>
+      <table width="958" border="1" align="center">
+        <tr>
+          <td colspan="5">&nbsp;</td>
+          <td width="65">BUSCAR:</td>
+          <td width="163"><form id="form2" name="form2" method="post" action="">
+            <label for="buscar"></label>
+            <input type="text" name="buscar" id="buscar" />
+          </form></td>
+          <td width="105"><form id="form3" name="form3" method="post" action="">
+            <form method="post" type="submit">
+            <input type="submit" name="Aceptar" id="Aceptar" value="Aceptar" />
+            </form>
+          </form></td>
+        </tr>
+        <tr>
+          <td colspan="8" align="center" bgcolor="#999999">LISTADO DE PRODUCTOS</td>
+        </tr>
+        <tr>
+          <td width="43" align="center" bgcolor="#FF6600"> ID   </td>
+          <td width="124" align="center" bgcolor="#FF6600">IMAGEN</td>
+          <td width="94" align="center" bgcolor="#FF6600">NOMBRE</td>
+          <td width="240" align="center" bgcolor="#FF6600">DESCRIPCIÓN</td>
+          <td width="72" align="center" bgcolor="#FF6600">PRECIO</td>
+          <td align="center" bgcolor="#FF6600">EN STOCK</td>
+          <td align="center" bgcolor="#FF6600">FECHA</td>
+          <td align="center" bgcolor="#FF6600">AGREGAR </td>
+        </tr>
 
+        <?php
+        $consulta=mysql_query("select * from productos");
+          if (isset($_POST['buscar'])){
+        	  $consulta=mysql_query("select * from productos where nombre like '%" .$_POST['buscar']. "%'");
+          }
 
+        	while($filas=mysql_fetch_array($consulta)){
+      		$id=$filas['id'];
+        	$imagen=$filas['imagen'];
+        	$nombre=$filas['nombre'];
+        	$desc=$filas['descripcion'];
+      		$precio=$filas['precio'];
+      		$enStock=$filas['cuanto_hay'];
+      		$fecha=$filas['fecha'];
 
+        ?>
 
+        <tr>
+          <td align="center" valign="middle"><?php echo $id ?></td>
+          <td align="center" valign="middle"><img src="<?php echo $imagen; ?>" width="195" height="130" /><br /></td>
+          <td align="center" valign="middle"><?php echo $nombre ?></td>
+          <td align="center" valign="middle"><?php echo $desc ?></td>
+          <td align="center" valign="middle"><?php echo $precio ?></td>
+          <td align="center" valign="middle"><?php echo $enStock ?></td>
+          <td align="center" valign="middle"><?php echo $fecha ?></td>
+          <td align="center" valign="middle"><form action="carrito.php" method="post" name="compra">
+          <input name="id_txt" type="hidden" value="<?php echo $id ?>" /><input name="Comprar" type="submit" value="Comprar" /></form></td>
+        </tr>
 
+         <?php } ?>
+      </table>
+
+<br>
+<br>
+<br>
 
       <footer class="footer-distributed">
 
