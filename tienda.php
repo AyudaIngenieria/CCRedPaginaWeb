@@ -161,8 +161,15 @@
           <td align="center" valign="middle"><?php echo $precio ?></td>
           <td align="center" valign="middle"><?php echo $enStock ?></td>
           <td align="center" valign="middle"><?php echo $fecha ?></td>
-          <td align="center" valign="middle"><form action="carrito.php" method="post" name="compra">
-          <input name="id_txt" type="hidden" value="<?php echo $id ?>" /><input name="Comprar" type="submit" value="Comprar" /></form></td>
+          <td align="center" valign="middle">
+            <form action="carrito.php" method="post" name="compra">
+              <input name="id_txt" type="hidden" value="<?php echo $id ?>" />
+              <input name="nombre" type="hidden" value="<?php echo $nombre ?>" />
+              <input name="precio" type="hidden" value="<?php echo $precio ?>" />
+              <input name="cantidad" type="hidden" value="1" />
+              <input name="Comprar" type="submit" value="Comprar" />
+            </form>
+          </td>
         </tr>
 
          <?php } ?>
