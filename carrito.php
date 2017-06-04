@@ -12,7 +12,8 @@
 </head>
 
 <body>
-<p class="c">Carrito de compras</p>
+<h2>Carrito de compras
+</h2>
 <p>Sus compras hasta el momento son:</p>
 <p>&nbsp;</p>
 
@@ -60,36 +61,46 @@
 		$mi_carrito[$indice]['cantidad']=$cuanto;
 
 	}
+
+	if (isset($_POST['id3'])){
+		$indice=$_POST['id3'];
+		$mi_carrito[$indice]=NULL;
+
+	}
+
 	if (isset($mi_carrito)) $_SESSION['carrito']=$mi_carrito;
 
 
 ?>
 
-<table width="493" border="1">
+<table width="525" border="1">
   <tr>
-    <td colspan="4" align="center" bgcolor="#999999">LISTADO DE SUS COMPRAS</td>
+    <td colspan="5" align="center" bgcolor="#999999">LISTADO DE SUS COMPRAS</td>
   </tr>
   <tr>
     <td width="125" align="center" bgcolor="#FF6600">Producto</td>
     <td width="68" align="center" bgcolor="#FF6600">Precio</td>
-    <td width="109" align="center" bgcolor="#FF6600">Cantidad</td>
-    <td width="163" align="center" bgcolor="#FF6600">Subtotal</td>
+    <td width="147" align="center" bgcolor="#FF6600">Cantidad</td>
+    <td width="157" colspan="2" align="center" bgcolor="#FF6600">Subtotal</td>
   </tr>
 
   <?php
  		if(isset($mi_carrito)){
 			$total=0;
 			for($i=0;$i<count($mi_carrito);$i++){
+				if ($mi_carrito[$i]<>NULL)
+				{
+
   ?>
 
   <tr>
-    <td><?php echo $mi_carrito[$i]['nombre'] ?></td>
-    <td><?php echo $mi_carrito[$i]['precio'] ?></td>
-    <td>
+    <td align="center" valign="middle"><?php echo $mi_carrito[$i]['nombre'] ?></td>
+    <td align="center" valign="middle"><?php echo $mi_carrito[$i]['precio'] ?></td>
+    <td align="center" valign="middle">
     <form action="" method="post" name="actualizo">
     	<input name="id2" type="hidden" value="<?php echo $i ?>" />
-        <input name="cantidad2" type="text" value="<?php echo $mi_carrito[$i]['cantidad'] ?>" size="2" maxlength="2" />
-        <input name="" type="image" src="img/tienda/iconos/update.png" width="20px" height="20px"/>
+        <input name="cantidad2" type="text" value="<?php echo $mi_carrito[$i]['cantidad'] ?>" size="2" maxlength="6" />
+        <input name="input2" type="image" src="img/tienda/iconos/update.png" align="middle" width="20px" height="20px"/>
     </form></td>
 
     <?php
@@ -97,20 +108,35 @@
 		$total=$total+$subtotal;
 	?>
 
-    <td><?php echo $subtotal ?></td>
+    <td align="center" valign="middle"><?php echo $subtotal ?>
+      </td>
+    <td align="center" valign="middle"><form action="" method="post">
+        <input name="id3" type="hidden" value="<?php echo $i ?>" />
+        <input name="input" type="image" src="img/tienda/iconos/delete.png" align="top" width="20px" height="20px"/>
+    </form></td>
   </tr>
 
   <?php
-  	}
-		}
+				}
+  		}
+	}
   ?>
 
   <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>TOTAL</td>
-    <td><?php if (isset($total)) echo $total ?></td>
+    <td colspan="2" align="center" valign="middle">  <?php if (isset($total)) echo $total ?></td>
   </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><form id="form1" name="form1" method="post" action="confirmarpedido.php">
+      <input type="submit" name="confirmarPedido" id="confirmarPedido" value="Confirmar Pedido" />
+    </form></td>
+    <td colspan="2" align="center" valign="middle">&nbsp;</td>
+  </tr>
+
 </table>
 <p><a href="tienda.php">Volver</a></p>
 </body>
