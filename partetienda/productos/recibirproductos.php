@@ -1,4 +1,4 @@
-<?php include('../conexiontienda.php');
+<?php include('conexiontienda.php');
 ?>
 
 <?php
