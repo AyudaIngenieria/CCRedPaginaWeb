@@ -103,16 +103,20 @@ function ActualizarStock ($id,$can)
               <td align="center" valign="middle"><?php echo $fecha ?></td>
               <td align="center" valign="middle">
                 <form action="editar.php" method="post" name="compra">
-                  <input name="id_txt" type="hidden" value="<?php echo $id ?>" />
-                  <input name="nombre" type="hidden" value="<?php echo $nombre ?>" />
-                  <input name="precio" type="hidden" value="<?php echo $precio ?>" />
-                  <input name="cantidad" type="hidden" value="1" />
+                  <input name="id2" type="hidden" value="<?php echo $id ?>" />
+                  <input name="imagen2" type="hidden" value="<?php echo $imagen ?>" />
+                  <input name="nombre2" type="hidden" value="<?php echo $nombre ?>" />
+                  <input name="desc2" type="hidden" value="<?php echo $desc ?>" />
+                  <input name="precio2" type="hidden" value="<?php echo $precio ?>" />
+                  <input name="cantidad2" type="hidden" value="<?php echo $enStock ?>" />
+                  <input name="fecha2" type="hidden" value="<?php echo $fecha ?>" />
                   <input name="Comprar" type="submit" value="Editar" />
                 </form>
 
             <?php } ?>
           </td>
         </tr>
+        </p>
 
          <?php } ?>
       </table>

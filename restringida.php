@@ -7,19 +7,25 @@
 
 <body>
 
-<?php include('conexiontienda.php'); ?>
-
 <?php
-
 session_start();
 
 if($_SESSION['miSession']['permiso']==1){
-	$a=verListadoProductos ('edicion');
+	echo 'Tienes permiso<br>';
+	echo $_SESSION['miSession']['nombre'].'<br>';
+	echo $_SESSION['miSession']['usuario'].'<br>';
+	echo $_SESSION['miSession']['permiso'].'<br>';
 
+}else{
+	echo 'No tienes permisos';
+	?>
+   	<html>
+    	<head>
+        	<meta http-equiv="refresh" content="3; url=pidodatos.php" />
+        </head>
+    </html>
+    <?php
 }
-
 ?>
-
-
 </body>
 </html>

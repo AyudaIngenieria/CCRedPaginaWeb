@@ -35,7 +35,7 @@
 
   </head>
 
-  <body>
+<body>
 
     <nav class="navbar navbar-inverse navbar-static-top">
       <div id="navbar" class="collapse navbar-collapse">
@@ -102,9 +102,9 @@
                 </li>
               </ul>
             </div>
-          </div>
         </div>
-      </nav>
+      </div>
+</nav>
 
 <?php $a=verListadoProductos ('comprar') ?>
 
@@ -113,14 +113,18 @@
 <br>
 
 <p><a href="carrito.php">Ver carrito</a></p>
+<form name="form1" method="post" action="pidodatos.php">
+  <input type="submit" name="login" id="login" value="Login">
+</form>
+<p></p>
 
-      <footer class="footer-distributed">
+    <footer class="footer-distributed">
 
-        <div class="footer-left" align="center">
+      <div class="footer-left" align="center">
           <a href="index.html">
             <img src="img/LogosCCRED/logoccred.png" align="left" style="margin-bottom;" width="80px" height="80px">
           </a>
-        </div>
+      </div>
 
         <div class="footer-center" align="center">
           <p class="footer-links" style="margin-bottom;">
@@ -135,7 +139,7 @@
             <a href="galeria.html" align="center">Galería</a>
             ·
             <a href="contacto.php" align="center">Contacto</a>
-            </p>
+          </p>
           <p align="center"><font color="#CEC8c4"><h6>Grupo CCred S.A de C.V &copy; Todos los derechos reservados. 2017</h6></font></p>
         </div>
 
@@ -146,7 +150,7 @@
           <a href="#"><i class="fa fa-youtube-play" style="color: #BB0000;"></i></a>
         </div>
 
-      </footer>
+</footer>
 
 </body>
 </html>
