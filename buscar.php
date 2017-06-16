@@ -13,10 +13,10 @@
 
 session_start();
 
-if($_SESSION['miSession']['permiso']==1){
+//if($_SESSION['miSession']['permiso']==1){
 	$a=verListadoProductos ('edicion');
 
-}
+//}
 
 ?>
 

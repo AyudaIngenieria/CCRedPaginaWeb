@@ -16,11 +16,12 @@
 ?>
 
 <body>
-<form id="form1" name="form1" method="post" action="">
-  <table width="200" border="1">
+<form action="recibirEditar.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table width="338" border="1">
     <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td>ImagenNueva: </td>
+      <td><label for="Imagen2"></label>
+      <input type="file" name="imagen2" id="imagen2" /></td>
     </tr>
     <tr>
       <td>Imagen:</td>
@@ -29,6 +30,7 @@
     </tr>
     <tr>
       <td>Nombre:</td>
+      <input name="id" type="hidden" value="<?php echo $id ?>" />
       <td><label for="nombre"></label>
       <input type="text" name="nombre" id="nombre" value="<?php echo $nombre ?>"/></td>
     </tr>
@@ -53,8 +55,7 @@
       <input type="text" name="fecha" id="fecha" value="<?php echo $fecha ?>"/></td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
     </tr>
     <tr>
       <td>&nbsp;</td>

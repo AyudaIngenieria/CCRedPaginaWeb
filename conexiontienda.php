@@ -19,7 +19,7 @@ function ActualizarStock ($id,$can)
       mysql_query($cad);
       //echo $cad
 
-      echo '<p>Registro Actualizado. </p>';
+      echo '<p>Registro Actualizado! </p>';
     }
 }
 
@@ -121,3 +121,31 @@ function ActualizarStock ($id,$can)
          <?php } ?>
       </table>
  <?php } ?>
+
+ <?php
+ function EncontrarReg($id)
+ {
+
+ 	$consulta="select * from productos where id=$id";
+ 	$res=mysql_query($consulta);
+ 	$fila=mysql_fetch_array($res);
+ 	return $fila;
+
+ }
+ ?>
+
+ <?php
+function grabarCambios($id,$nom,$des,$precio,$cuanto_hay,$imagen,$fecha)
+{
+
+//Escribo en base de datos
+if(isset($id))
+{
+	$cad="UPDATE productos set nombre='$nom', descripcion='$des', precio='$precio',
+			cuanto hay='$cuanto_hay', imagen='$imagen', fecha='$fecha' where id=$id";
+	mysql_query($cad);
+	//echo $cad;
+	echo '<p>Registro Actualizado!</p>';
+	}
+}
+?>
