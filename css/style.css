@@ -44,45 +44,11 @@ html, body {
     width: 400px;
 }
 
-.btn-color{
-  color:#FFF;
-  background-color: #333333;
-}
-
-.btn-color:hover{
-  color:#FFF;
-  background-color: #000;
-}
-
 li:last-child {
   float:right ;
 }
 
 CSS
-
-.ir-arriba {
-	display:none;
-	padding:20px;
-	background:#024959;
-	font-size:20px;
-	color:#fff;
-	cursor:pointer;
-	position: fixed;
-	bottom:20px;
-	right:20px;
-}
-
-.ir-arriba {
-	display:none;
-	padding:20px;
-	background:#024959;
-	font-size:20px;
-	color:#fff;
-	cursor:pointer;
-	position: fixed;
-	bottom:20px;
-	right:20px;
-}
 
 .modal-dialog {width:600px;}
 .thumbnail {margin-bottom:8px;}
