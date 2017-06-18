@@ -112,6 +112,11 @@ function ActualizarStock ($id,$can)
                   <input name="fecha2" type="hidden" value="<?php echo $fecha ?>" />
                   <input name="Comprar" type="submit" value="Editar" />
                 </form>
+                <form action="borrar.php" method="post">
+                	<input name="id" type="hidden" value="<?php echo $id ?>" />
+                	<input name="" value="Borrar" type="submit" />
+                </form>
+
 
             <?php } ?>
           </td>
@@ -148,4 +153,12 @@ if(isset($id))
 	echo '<p>Registro Actualizado!</p>';
 	}
 }
+
+function borrar($id)
+{
+	$sql="DELETE from productos where id=$id";
+	mysql_query($sql);
+	echo 'Registro eliminado con exito';
+}
+
 ?>

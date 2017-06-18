@@ -7,7 +7,9 @@ $rutaEnServidor='img/tienda/productos';
 $rutaTemporal=$_FILES['imagen']['tmp_name'];
 $nombreImagen=$_FILES['imagen']['name'];
 $rutaDestino=$rutaEnServidor.'/'.$nombreImagen;
-move_uploaded_file($rutaTemporal,$rutaDestino);
+//echo 'ruta temporal: '.$rutaTemporal. '<br>';
+//echo 'ruta destino: '.$rutaDestino. '<br>';
+move_uploaded_file($rutaTemporal,''.$rutaDestino);
 
 $nombre=$_POST['nombre'];
 $precio=$_POST['precio'];
