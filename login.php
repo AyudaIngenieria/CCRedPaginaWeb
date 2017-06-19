@@ -21,7 +21,7 @@
 
          header("location: welcome.php");
       }else {
-         $error = "Tu usuario o password son inválidos"; 
+         $error = "Tu nombre de usuario o contraseña no son válidos.";
       }
    }
 ?>
@@ -29,8 +29,11 @@
 <html>
   <head>
       <link rel="icon" href="icon/ccredico.ico" type="icon/ccredico.ico" />
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-      Grupo CCred - Login
+      Login
     </title>
 
     <!--Bootstrap-->
@@ -59,7 +62,11 @@
       <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         <div class="panel panel-color" >
           <div class="panel-heading">
-              <div class="panel-title" style="color: #F67115"><center><h2>Bienvenid@ a Grupo CCred</h2></center></div>
+              <div class="panel-title" style="color: #F67115"><center><h2>Bienvenid@ a</h2></center></div>
+              <center><img src="img/LogosCCRED/logoccred.png" alt="Grupo CCred" class="" width='150' height='150'></center>
+              <br>
+              <h4><center><font face="arial" color="#BCBDCB">Ingresa tus datos para acceder al contenido exclusivo de
+              Grupo CCred.</font></center></h4>
           </div>
             <div style="padding-top:30px" class="panel-body" >
               <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
@@ -67,17 +74,21 @@
 
                       <div style="margin-bottom: 25px" class="input-group">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                  <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                  <input id="login-username" type="text" class="form-control" name="username" value=""
+                                  placeholder="Nombre de usuario">
                               </div>
 
                       <div style="margin-bottom: 25px" class="input-group">
                                   <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                  <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                  <input id="login-password" type="password" class="form-control" name="password"
+                                  placeholder="Contraseña">
                               </div>
                           <div style="margin-top:10px" class="form-group">
                               <!-- Button -->
-                              <div class="col-sm-12 controls">
-                                <button type="submit" class="btn btn-warning">Ingresar</button>
+                              <div class="col-sm-12 control">
+                              <center><button type="submit" class="btn btn-warning">Ingresar</button>
+                              <button input type="button" value="Boton" class="btn btn-warning" onclick="location.href='index.html'">
+                              Regresar</button></center>
                               </div>
                           </div>
                       </form>
@@ -86,6 +97,5 @@
               </div>
    </div>
 </div>
-<center><img src="img/LogosCCRED/logoccred.png" alt="" class="" width='300' height='300'></center>
   </body>
 </html>
