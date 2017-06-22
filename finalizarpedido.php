@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 $nombre=$_POST['nombre'];
@@ -9,7 +8,16 @@ $correo=$_POST['correo'];
 $telefono=$_POST['telefono'];
 
 $mi_carrito=$_SESSION['carrito'];
-$pedido='<h1>-----------Pedido----------</h1> <br><br>';
+$pedido='
+
+<h2>Gracias por su compra. <br></h2><h3>'.$nombre.'&nbsp;'.$apellido.'</h3>
+Tu transacción ha finalizado y te hemos enviado un recibo de tu compra por correo electrónico.<br><br>
+Un personal de la empresa Grupo CCred se comunicará con usted.<br><br>
+
+Reciba un cordial saludo. <br>
+Equipo Grupo CCred S.A de C.V
+
+<br><br>';
 
 if(isset($mi_carrito)){
 			$total=0;
@@ -48,6 +56,34 @@ $pedido.='<tr><td> Total: '.$total;
 $pedido.='</td></tr>';
 
 echo $pedido;
+//*****************************
+
+// Varios destinatarios
+$para  = $correo . ', '; // atención a la coma
+$para .= 'samu.br0996@gmail.com';
+
+// título
+$título = 'Su compra realizada fue';
+
+// mensaje
+$mensaje = $pedido;
+
+// Para enviar un correo HTML, debe establecerse la cabecera Content-type
+$cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+$cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+// Cabeceras adicionales
+//$cabeceras .= 'To: Mary <mary@example.com>, Kelly <kelly@example.com>' . "\r\n";
+$cabeceras .= 'From: Grupo CCred S.A de C.V <samu.br0996@gmail.com>' . "\r\n";
+//$cabeceras .= 'Cc: birthdayarchive@example.com' . "\r\n";
+//$cabeceras .= 'Bcc: birthdaycheck@example.com' . "\r\n";
+
+// Enviarlo
+mail($para, $título, $mensaje, $cabeceras);
+
+
+
+//*****************************
 }
 
 ?>
