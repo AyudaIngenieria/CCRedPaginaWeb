@@ -88,7 +88,7 @@
                               <div class="col-sm-12 control">
                               <center><button type="submit" class="btn btn-warning">Ingresar</button>
                               <button input type="button" value="Boton" class="btn btn-warning" onclick="location.href='index.html'">
-                              Regresar</button></center>
+                              Regresar a página principal</button></center>
                               </div>
                           </div>
                       </form>

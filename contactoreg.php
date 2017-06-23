@@ -62,7 +62,7 @@
             <div class="col-sm-1">
               <ul class="nav navbar-nav">
                 <li class="dropdown">
-                 <a href="servicios.html" data-toggle="dropdown" class="dropdown-toggle"><font color="#94840D">Servicios
+                 <a href="serviciosreg.html" data-toggle="dropdown" class="dropdown-toggle"><font color="#94840D">Servicios
                  </font></a>
                   <ul class="dropdown-menu">
                     <li><a href="monitoreo-de-redes.html"><font color="#94840D">Monitoreo de redes</font></a></li>
@@ -94,7 +94,7 @@
             <div class="col-sm-1">
               <ul class="nav navbar-nav">
                 <li>
-                  <a href="productos.html"><font color="#94840D">Productos</a>
+                  <a href="productosreg.html"><font color="#94840D">Productos</a>
                 </li>
               </ul>
             </div>
@@ -349,7 +349,7 @@
               <a href="serviciosreg.html" align="center"><font color="#94840D">Servicios</a>·</font>
               <a href="clientesreg.html" align="center"><font color="#94840D">Clientes</a>·</font>
               <a href="galeriareg.html" align="center"><font color="#94840D">Galería</a>·</font>
-              <a href="productos.html" align="center"><font color="#94840D">Productos</font></a>
+              <a href="productosreg.html" align="center"><font color="#94840D">Productos</font></a>
             </p>
             <p align="center"><font color="#94840D"><h6>Grupo CCred S.A de C.V &copy; Todos los derechos reservados. 2017</h6></font></p>
           </div>
