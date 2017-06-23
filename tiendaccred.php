@@ -3,7 +3,7 @@
 
 <html>
   <head>
-      <link rel="icon" href="icon/ccredico.ico" type="icon/ccredico.ico" />
+      <link rel="icon" href="icon/ccredoroico.ico" type="icon/ccredoroico.ico" />
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <title>

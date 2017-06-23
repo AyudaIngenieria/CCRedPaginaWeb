@@ -5,6 +5,7 @@
 
    <head>
       <title>Bienvenido/a </title>
+      <link rel="icon" href="icon/ccredoroico.ico" type="icon/ccredoroico.ico" />
       <meta http-equiv="refresh" content="3; url=indexreg.html">
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
