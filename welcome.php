@@ -19,9 +19,7 @@
       <br>
       <h3><center><font face="arial" color="#B09B12">En unos segundos, se te redirigirá al sitio web de Grupo CCred.</font></center></h3>
       <br>
-      <br>
-      <br>
-      <center><img src="img/LogosCCRED/logoblanco.png" width="300px" height="300px"></center>
+      <center><img src="img/LogosCCRED/logodorado.png" width="550px" height="450px"></center>
    </body>
 
 </html>

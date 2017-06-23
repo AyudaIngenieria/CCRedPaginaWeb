@@ -6,18 +6,31 @@ $apellido=$_POST['apellido'];
 $direccion=$_POST['direccion'];
 $correo=$_POST['correo'];
 $telefono=$_POST['telefono'];
-
 $mi_carrito=$_SESSION['carrito'];
-$pedido='
 
-<h2>Gracias por su compra. <br></h2><h3>'.$nombre.'&nbsp;'.$apellido.'</h3>
-Tu transacción ha finalizado y te hemos enviado un recibo de tu compra por correo electrónico.<br><br>
-Un personal de la empresa Grupo CCred se comunicará con usted.<br><br>
+$saludo='
+<h2>Gracias por su compra. <br></h2><h3>'.$nombre.'&nbsp'.$apellido.'</h3>
+Tu transacci&oacute;n ha finalizado y te hemos enviado un recibo de tu compra por correo electr&oacute;nico.<br>
+Un personal de la empresa Grupo CCred se comunicar&aacute; con usted.<br><br>
 
-Reciba un cordial saludo. <br>
+Reciba un cordial saludo.<br>
 Equipo Grupo CCred S.A de C.V
+';
 
-<br><br>';
+$pedido='
+<h3>Gracias por su compra. <br></h3><h4>'.$nombre.'&nbsp'.$apellido.'</h4>
+Tu transacci&oacute;n ha finalizado.<br>
+Un personal de la empresa Grupo CCred se comunicar&aacute; con usted.<br>
+
+Reciba un cordial saludo.
+Equipo Grupo CCred S.A de C.V
+<br><br>
+
+Datos del cliente:
+<br>Telefonono '.$telefono.'<br>
+Direccion '.$direccion.'<br>
+Correo electronico '.$correo.'<br><br>
+';
 
 if(isset($mi_carrito)){
 			$total=0;
@@ -55,7 +68,7 @@ if(isset($mi_carrito)){
 $pedido.='<tr><td> Total: '.$total;
 $pedido.='</td></tr>';
 
-echo $pedido;
+echo $saludo;
 //*****************************
 
 // Varios destinatarios

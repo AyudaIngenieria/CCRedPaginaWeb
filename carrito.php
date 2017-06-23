@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin título</title>
+<title>Carrito de compras</title>
 <style type="text/css">
 .c {
 	font-weight: bold;
@@ -141,6 +141,6 @@
   </tr>
 
 </table>
-<p><a href="tienda.php">Volver</a></p>
+<p><a href="tiendaccred.php">Volver</a></p>
 </body>
 </html>
