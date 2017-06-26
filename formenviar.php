@@ -11,23 +11,26 @@ $nombre = mysqli_real_escape_string($con, $_POST["nombre"]);
 $apellido = mysqli_real_escape_string($con, $_POST["apellido"]);
 $correo = mysqli_real_escape_string($con, $_POST["correo"]);
 $telefono = mysqli_real_escape_string($con, $_POST["telefono"]);
-$ciudad = mysqli_real_escape_string($con, $_POST["ciudad"]);
+$delmpio = mysqli_real_escape_string($con, $_POST["delmpio"]);
 $estado = mysqli_real_escape_string($con, $_POST["estado"]);
 $cod_postal = mysqli_real_escape_string($con, $_POST["cod_postal"]);
 $asunto = mysqli_real_escape_string($con, $_POST["asunto"]);
 $mensaje = mysqli_real_escape_string($con, $_POST["mensaje"]);
 
 //insertamos los valores del formulario
-$sql = "INSERT INTO registro (nombre, apellido, correo, telefono, ciudad, estado, cod_postal, asunto, mensaje)
-VALUES ('$nombre','$apellido','$correo','$telefono','$ciudad','$estado','$cod_postal','$asunto','$mensaje')";
+$sql = "INSERT INTO contacto (nombre, apellido, correo, telefono, delmpio, estado, cod_postal, asunto, mensaje)
+VALUES ('$nombre','$apellido','$correo','$telefono','$delmpio','$estado','$cod_postal','$asunto','$mensaje')";
 
 if(!mysqli_query($con,$sql)){
 	die ('Error: ' . mysqli_error($con));
 	}
 	else {
-		echo "Registro guardado exitosamente";
+		echo "Tus datos han sido enviados exitosamente al personal de Grupo CCred.";
 	}
-
-
-
 ?>
+
+<html>
+	<head>
+			<meta http-equiv="refresh" content="2; contacto.php" />
+		</head>
+</html>

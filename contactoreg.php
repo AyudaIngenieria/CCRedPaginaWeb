@@ -142,7 +142,7 @@
                       <div class="col-xs-8 inputGroupContainer">
                         <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                          <input type="text"  name="nombre" placeholder="Nombre" class="form-control">
+                          <input type="text" required="required" name="nombre" placeholder="Nombre/s" class="form-control">
                         </div>
                       </div>
                       <br>
@@ -151,7 +151,7 @@
                       <div class="col-xs-8 inputGroupContainer">
                         <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                          <input type="text" name="apellido" placeholder="Apellido" class="form-control">
+                          <input type="text" required="required"name="apellido" placeholder="Apellido/s" class="form-control">
                         </div>
                       </div>
                       <br>
@@ -160,7 +160,7 @@
                       <div class="col-xs-8 inputGroupContainer">
                         <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                          <input type="email" name="correo" placeholder="Correo electronico" class="form-control">
+                          <input type="email" required="required" name="correo" placeholder="Correo electronico" class="form-control">
                         </div>
                       </div>
                       <br>
@@ -169,16 +169,16 @@
                       <div class="col-xs-8 inputGroupContainer">
                         <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                          <input type="text" name="telefono" placeholder="Número de teléfono" class="form-control">
+                          <input type="text" required="required" name="telefono" placeholder="Número de teléfono" class="form-control">
                         </div>
                       </div>
                       <br>
                       <br>
-                    <label class="control-label col-xs-4">Ciudad:</label>
+                    <label class="control-label col-xs-4">Delegación/Municipio:</label>
                       <div class="col-xs-8 inputGroupContainer">
                         <div class="input-group">
                           <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                          <input type="text" name="ciudad" placeholder="Ciudad" class="form-control">
+                          <input type="text" required="required" name="delmpio" placeholder="Delegación/Municipio" class="form-control">
                         </div>
                       </div>
                       <br>
@@ -187,7 +187,7 @@
                       <div class="col-xs-8 selectContainer">
                       <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                        <input type="text" name="estado" placeholder="Estado" class="form-control">
+                        <input type="text" required="required" name="estado" placeholder="Estado" class="form-control">
                       </div>
                     </div>
                     <br>
@@ -196,7 +196,7 @@
                     <div class="col-xs-8 inputGroupContainer">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-                      <input type="text" name="cod_postal" placeholder="Código Postal" class="form-control">
+                      <input type="text" required="required" name="cod_postal" placeholder="Código Postal" class="form-control">
                     </div>
                   </div>
                   <br>
@@ -205,7 +205,7 @@
                   <div class="col-xs-8 inputGroupContainer">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                      <input type="text" name="asunto" placeholder="" class="form-control">
+                      <input type="text" required="required" name="asunto" placeholder="" class="form-control">
                     </div>
                   </div>
                   <br>
@@ -214,7 +214,7 @@
                   <div class="col-xs-8 inputGroupContainer">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                      <input type="text" name="mensaje" placeholder="" class="form-control">
+                      <input type="text" required="required" name="mensaje" placeholder="" class="form-control">
                     </div>
                   </div>
                   <br>
