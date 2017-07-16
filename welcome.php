@@ -16,11 +16,10 @@
       <br>
       <br>
       <br>
-      <h1><center><font face="arial" color="#B09B12">Bienvenido/a <?php echo $login_session; ?></font></center></h1>
+      <h1><center><font face="arial" color="#D8D8D8">Bienvenido/a <?php echo $login_session; ?></font></center></h1>
       <br>
-      <h3><center><font face="arial" color="#B09B12">En unos segundos, se te redirigirá al sitio web de Grupo CCred.</font></center></h3>
-      <br>
-      <center><img src="img/LogosCCRED/logodorado.png" width="550px" height="450px"></center>
+      <h3><center><font face="arial" color="#D8D8D8">En unos segundos, se te redirigirá al sitio web de Grupo CCred.</font></center></h3>
+      <center><img src="img/LogosCCRED/grupoccred.png" width="600px" height="500px"></center>
    </body>
 
 </html>
