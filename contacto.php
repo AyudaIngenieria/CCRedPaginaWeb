@@ -106,14 +106,14 @@
 <br>
 
   <!-- Inicia el formulario -->
-    <div class="container-fluid">
+  <div class="container-fluid">
 
-        <fieldset>
-          <!-- Form Name -->
-          <legend><h1>Contacto</h1></legend>
-          <h4>Gracias por interesarse en nuestros servicios. </h4>
-          <h4>Por favor, pon tus datos y con gusto uno de nuestros representantes se pondra en contacto contigo.</h4>
-        </fieldset>
+  <fieldset>
+    <legend><h1>Contacto</h1></legend>
+    <h4>Gracias por interesarse en nuestros servicios. </h4>
+    <h4>Por favor, pon tus datos y con gusto uno de nuestros representantes se pondra en contacto contigo.</h4>
+  </fieldset>
+
           <!-- Text input/ Inicia el formulario-->
         <div class="row">
           <div class="col-lg-6">
@@ -143,16 +143,17 @@
                   <div class="col-xs-8 inputGroupContainer">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                      <input type="email" required="required" name="correo" placeholder="Correo electronico" class="form-control">
+                      <input type="email" required="required" name="correo" placeholder="Correo electronico"
+                      class="form-control">
                     </div>
                   </div>
                   <br>
                   <br>
-                <label class="control-label col-xs-4">Número de teléfono:</label>
+                <label class="control-label col-xs-4">Teléfono:</label>
                   <div class="col-xs-8 inputGroupContainer">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                      <input type="text" required="required" name="telefono" placeholder="Número de teléfono" class="form-control">
+                      <input type="text" required="required" name="telefono" placeholder="Teléfono" class="form-control">
                     </div>
                   </div>
                   <br>
@@ -216,16 +217,18 @@
         </form>
 
 
-          <div class="col-lg-6">
+        <div class="col-lg-6">
+          <div class="embed-responsive embed-responsive-16by9">
             <br>
             <br>
             <br>
             <br>
             <center>
-              <img src="img/contacto/contacto.png" alt="contacto" />
+              <img class="embed-responsive-item" src="img/contacto/contacto.png"></img>
             </center>
-          </div><!--Div col-lg-6 parte 2-->
-        </div><!--Div row-->
+          </div><!--Div de embed responsive-->
+        </div><!--Div col-lg-6 parte 2-->
+      </div><!--Div row-->
 
         <legend><h1>Vísitanos</h1></legend>
         <h4>Vísitanos en nuestras oficinas centrales ubicadas en: </h4>
@@ -337,7 +340,8 @@
         </div>
     </footer>
 
-    <p style="margin:-1.5% 0;"></p>
+<p style="margin:-4.5% 0;"></p>
+
 
   </body>
 </html>
