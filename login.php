@@ -21,7 +21,7 @@
 
          header("location: welcome.php");
       }else {
-         $error = "Tu nombre de usuario o contraseña no son válidos.";
+         $error = "Tu nombre de usuario o contraseña no son válidos. Por favor, vuelva a intentarlo.";
       }
    }
 ?>

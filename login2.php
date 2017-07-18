@@ -48,7 +48,7 @@ while($filas=mysql_fetch_array($consulta) and $puerta='continuar'){
 
             <html>
             	<head>
-            		<meta http-equiv="refresh" content="3; url=tienda.php">
+            		<meta http-equiv="refresh" content="3; url=tiendaccred.php">
                 </head>
             </html>
 
