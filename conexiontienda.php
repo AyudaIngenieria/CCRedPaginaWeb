@@ -27,35 +27,25 @@ function ActualizarStock ($id,$can)
 
 <?php function verListadoProductos ($modo) {?>
 
-<form id="form1" name="form1" method="post" action="">
-      </form>
-      <table width="958" border="1" align="center">
-        <tr>
-          <td colspan="5">&nbsp;</td>
-          <td width="65">BUSCAR:</td>
-          <td width="163"><form id="form2" name="form2" method="post" action="">
-            <label for="buscar"></label>
-            <input type="text" name="buscar" id="buscar" />
-          </form></td>
-          <td width="105"><form id="form3" name="form3" method="post" action="">
-            <form method="post" type="submit">
-            <input type="submit" name="Aceptar" id="Aceptar" value="Aceptar" />
-            </form>
-          </form></td>
-        </tr>
-        <tr>
-          <td colspan="8" align="center" bgcolor="#999999">LISTADO DE PRODUCTOS</td>
-        </tr>
-        <tr>
-          <td width="43" align="center" bgcolor="#FF6600"> ID   </td>
-          <td width="124" align="center" bgcolor="#FF6600">IMAGEN</td>
-          <td width="94" align="center" bgcolor="#FF6600">NOMBRE</td>
-          <td width="240" align="center" bgcolor="#FF6600">DESCRIPCIÓN</td>
-          <td width="72" align="center" bgcolor="#FF6600">PRECIO</td>
-          <td align="center" bgcolor="#FF6600">EN STOCK</td>
-          <td align="center" bgcolor="#FF6600">FECHA</td>
-          <td align="center" bgcolor="#FF6600">AGREGAR </td>
-        </tr>
+
+    <div class="table-responsive" align="center" width=100% style="overflow-x:auto;" "overflow-y:auto;">
+      <table class="table-responsive"  style="width:80%" border="1" align="center">
+
+    <tr>
+      <th colspan="8" align="center" valign="middle" bgcolor="#999999">LISTADO DE PRODUCTOS </th>
+    </tr>
+    <tr>
+      <th align="center" valign="middle" bgcolor="#FFA61F">ID</th>
+      <th align="center" valign="middle" bgcolor="#FFA61F">Imagen</th>
+      <th align="center" valign="middle" bgcolor="#FFA61F">Nombre</th>
+      <th align="center" valign="middle" bgcolor="#FFA61F">Descripción</th>
+      <th align="center" valign="middle" bgcolor="#FFA61F">Precio</th>
+      <th align="center" valign="middle" bgcolor="#FFA61F">En Stock</th>
+      <th align="center" valign="middle" bgcolor="#FFA61F">Fecha</th>
+      <th align="center" valign="middle" bgcolor="#FFA61F">Agregar</th>
+    </tr>
+
+
 
         <?php
         $consulta=mysql_query("select * from productos");
@@ -74,11 +64,12 @@ function ActualizarStock ($id,$can)
 
         ?>
 
+
         <tr>
 
           <?php if($modo<>'edicion') { ?>
           <td align="center" valign="middle"><?php echo $id ?></td>
-          <td align="center" valign="middle"><img src="<?php echo $imagen; ?>" width="195" height="130" /><br /></td>
+          <td align="center" valign="middle"><img src="<?php echo $imagen; ?>" width="175" height="110" /><br /></td>
           <td align="center" valign="middle"><?php echo $nombre ?></td>
           <td align="center" valign="middle"><?php echo $desc ?></td>
           <td align="center" valign="middle"><?php echo $precio ?></td>
@@ -94,14 +85,15 @@ function ActualizarStock ($id,$can)
             </form>
             <?php } else { ?>
 
-              <td align="center" valign="middle"><?php echo $id ?></td>
-              <td align="center" valign="middle"><img src="<?php echo ''. $imagen; ?>" width="195" height="130" /><br /></td>
-              <td align="center" valign="middle"><?php echo $nombre ?></td>
-              <td align="center" valign="middle"><?php echo $desc ?></td>
-              <td align="center" valign="middle"><?php echo $precio ?></td>
-              <td align="center" valign="middle"><?php echo $enStock ?></td>
-              <td align="center" valign="middle"><?php echo $fecha ?></td>
-              <td align="center" valign="middle">
+              <td style="display: inline-block;" align="center" valign="middle"><?php echo $id ?></td>
+              <td style="display: inline-block;" align="center" valign="middle"><img src="<?php echo ''. $imagen; ?>" width="195" height="130" /><br />
+              </td>
+              <td style="display: inline-block;" align="center" valign="middle"><?php echo $nombre ?></td>
+              <td style="display: inline-block;" align="center" valign="middle"><?php echo $desc ?></td>
+              <td style="display: inline-block;" align="center" valign="middle"><?php echo $precio ?></td>
+              <td style="display: inline-block;" align="center" valign="middle"><?php echo $enStock ?></td>
+              <td style="display: inline-block;" align="center" valign="middle"><?php echo $fecha ?></td>
+              <td style="display: inline-block;" align="center" valign="middle">
                 <form action="editar.php" method="post" name="compra">
                   <input name="id2" type="hidden" value="<?php echo $id ?>" />
                   <input name="imagen2" type="hidden" value="<?php echo $imagen ?>" />
@@ -125,6 +117,8 @@ function ActualizarStock ($id,$can)
 
          <?php } ?>
       </table>
+    </div>
+
  <?php } ?>
 
  <?php

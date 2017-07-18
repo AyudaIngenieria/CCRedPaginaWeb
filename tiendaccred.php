@@ -2,178 +2,176 @@
 ?>
 
 <html>
-  <head>
-      <link rel="icon" href="icon/ccredoroico.ico" type="icon/ccredoroico.ico" />
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <title>
-      Tienda CCred
-    </title>
+<head>
 
-    <!--Bootstrap-->
+    <!-- Icon -->
+    <link rel="icon" href="icon/ccredico.ico" type="icon/ccredico.ico" />
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="footer, links, icons" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tienda Grupo CCred</title>
+
+    <!-- Bootstrap Core CSS -->
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!--Estilos Modificados-->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-    <!--JQuery-->
+    <!-- scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
 
-    <script src="js/bootstrap.min.js"></script>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="footer, links, icons" />
-
-    <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="css/footer-distributed.css">
-
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
   </head>
+
+
+  <style>
+
+  .table {
+      border-collapse: collapse;
+      border-spacing: 0px;
+      width: 100%;
+      border: 0;
+
+
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  th, td {
+      border: 3px;
+      text-align: center;
+      padding: 5px;
+  }
+
+  tr:nth-child(even){background-color: #f2f2f2}
+
+  </style>
 
 <body>
 
-  <nav class="navbar navbar-inverse navbar-static-top">
-    <div id="navbar" class="collapse navbar-collapse">
-      <div class="row">
-        <div class="1">
-        </div>
-        <div class="col-sm-2">
-          <ul class="nav navbar-nav">
-              <a href="indexreg.html">
-                <img src="img/LogosCCRED/logodorado.png"  style="margin-top;" width="75px" height="50px">
-              </a>
-          </ul>
-        </div>
-          <div class="col-sm-1">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="indexreg.html"><font color="#94840D">Inicio</font></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-1">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="nosotrosreg.html"><font color="#94840D">Nosotros</font></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-1">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-               <a href="servicios.html" data-toggle="dropdown" class="dropdown-toggle"><font color="#94840D">Servicios
-               </font></a>
-                <ul class="dropdown-menu">
-                  <li><a href="monitoreo-de-redes.html"><font color="#94840D">Monitoreo de redes</font></a></li>
-                  <li><a href="voz-datos-y-video.html"><font color="#94840D">Voz, datos y video</font></a></li>
-                  <li><a href="optimizacion-de-energia.html"><font color="#94840D">Optimización de la energia</font></a></li>
-                  <li><a href="cableado-estructurado.html"><font color="#94840D">Cableado estructurado</font></a></li>
-                  <li><a href="capacitacion.html"><font color="#94840D">Capacitación</font></a></li>
-                  <li><a href="seguridad.html"><font color="#94840D">Seguridad</font></a></li>
-                  <li></li>
-                </ul>
-              </li>
-           </ul>
-          </div>
+  <!-- Navigation -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Grupo CCred</a>
+              </div>
 
-        <div class="col-sm-1">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="clientesreg.html"><font color="#94840D">Clientes</font></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-1">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="galeria.html"><font color="#94840D">Galería</font></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-1">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="productos.html"><font color="#94840D">Productos</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-1">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="contacto.php"><font color="#94840D">Contacto</font></a>
-              </li>
-            </ul>
-          </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-center">
+                      <li>
+                          <a href="index.html">Inicio</a>
+                      </li>
+                      <li>
+                          <a href="nosotros.html">Nosotros</a>
+                      </li>
 
-          <div class="col-sm-2">
-            <ul class="nav navbar-nav">
-              <li class="active">
-                <a href="tienda.php"><i class="glyphicon glyphicon-shopping-cart" style="color:#94840D" title="Tienda"></i></a>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="logout.php"><i class="glyphicon glyphicon-log-out" style="color:#94840D" title="Salir"></i></a>
-              </li>
-            </ul>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+                          Servicios <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="monitoreo-de-redes.html">Monitoreo de redes</a></li>
+                          <li><a href="voz-datos-y-video.html">Voz, datos y vídeo</a></li>
+                          <li><a href="optimizacion-de-energia.html">Optimización de la energía</a></li>
+                          <li><a href="cableado-estructurado.html">Cableado estructurado</a></li>
+                          <li><a href="seguridad.html">Seguridad</a></li>
+                          <li></li>
+                        </ul>
+                      </li>
+
+                      <li>
+                          <a href="clientes.html">Clientes</a>
+                      </li>
+                      <li>
+                          <a href="galeria.html">Galería</a>
+                      </li>
+                      <li class="active">
+                          <a href="productos.html">Productos</a>
+                      </li>
+                      <li>
+                          <a href="contacto.php">Contacto</a>
+                      </li>
+                  </ul>
+
+                  <ul class="nav navbar-nav navbar-right">
+                    <li>
+                      <a href="registro.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Registro</a>
+                    </li>
+                    <li>
+                      <a href="login.php"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Entrar</a>
+                    </li>
+                  </ul>
+                </div>
+              <!-- /.navbar-collapse -->
           </div>
-        </div>
-      </div>
-    </nav>
+          <!-- /.final de navbar-nav -->
+      </nav>
+
+<br>
+<br>
+<br>
 
 <p align="right"><a href="carrito.php">Ver carrito</a></p>
 <br>
+
 <?php $a=verListadoProductos ('comprar') ?>
 
 <br>
 <br>
-<br>
+
 
 <form name="form1" method="post" action="pidodatos.php">
   <center><input type="submit" align="right" name="login" id="login" value="Acceso Pesonal CCred"></center>
 </form>
 <p></p>
 
-    <footer class="footer-distributed">
+<br>
+<br>
+<br>
 
-      <div class="footer-left" align="center">
-          <a href="index.html">
-            <img src="img/LogosCCRED/logodorado.png" align="left" style="margin-bottom;" width="100px" height="80px">
-          </a>
-      </div>
+<!-- inicia footer -->
 
-        <div class="footer-center" align="center">
-          <p class="footer-links" style="margin-bottom;">
-            <a href="indexreg.html" align="center"><font color="#94840D">Inicio</a>
-            ·</font>
-            <a href="nosotrosreg.html" align="center"><font color="#94840D">Nosotros</a>
-            ·</font>
-            <a href="servicios.html" align="center"><font color="#94840D">Servicios</a>
-            ·</font>
-            <a href="clientesreg.html" align="center"><font color="#94840D">Clientes</a>
-            ·</font>
-            <a href="galeriareg.html" align="center"><font color="#94840D">Galería</a>
-            ·</font>
-            <a href="galeriareg.html" align="center"><font color="#94840D">Productos</a>
-            ·</font>
-            <a href="contactoreg.php" align="center"><font color="#94840D">Contacto</a>
-          </p>
-          <p align="center"><font color="#94840D"><h6>Grupo CCred S.A de C.V &copy; Todos los derechos reservados. 2017</h6></font></p>
-        </div>
+              <footer class="distributed" id="myFooter">
+                  <div class="second-bar">
+                     <div class="container">
+                            <a href="index.html"><img src="img/LogosCCRED/logoccred.png" align="left"
+                              style="margin-bottom;" width="100px" height="90px"> </a>
+                          <div class="social-icons">
+                              <a href="https://www.facebook.com/GrupoCCred/" class="facebook"><i class="fa fa-facebook"></i></a>
+                              <a href="https://twitter.com/GrupoCCred" class="twitter"><i class="fa fa-twitter"></i></a>
+                              <a href="https://www.instagram.com/grupoccred/" class="instagram"><i class="fa fa-instagram">
+                              </i></a>
+                          </div>
+                          <div class="footer-copyright">
+                            <p><font color="#CFCDCD">Grupo CCred S.A de C.V © 2017. Todos los derechos reservados.
+                            </font></p>
+                          </div>
+                      </div>
+                  </div>
+              </footer>
 
-        <div class="footer-right" align="center" style="margin-bottom">
-          <a href="https://www.facebook.com/GrupoCCred/"><i class="fa fa-facebook" style="color: #94840D;"></i></a>
-          <a href="https://twitter.com/GrupoCCred"><i class="fa fa-twitter" style="color: #94840D;"></i></a>
-          <a href="https://www.instagram.com/grupoccred/"><i class="fa fa-instagram" style="color: #94840D;"></i></a>
-          <a href="#"><i class="fa fa-youtube-play" style="color: #94840D;"></i></a>
-        </div>
-
-      </footer>
 
     </body>
     </html>
