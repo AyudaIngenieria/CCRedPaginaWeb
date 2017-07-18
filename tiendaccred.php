@@ -133,10 +133,14 @@
 <br>
 <br>
 
+<div>
+
 <p align="right"><a href="carrito.php">Ver carrito</a></p>
 <br>
 
 <?php $a=verListadoProductos ('comprar') ?>
+
+</div>
 
 <br>
 <br>
