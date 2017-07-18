@@ -63,7 +63,7 @@
         <div class="panel panel-color" >
           <div class="panel-heading">
               <div class="panel-title" style="color: #F67115"><center><h2>Bienvenid@ a</h2></center></div>
-              <center><img src="img/LogosCCRED/grupoccred.png" alt="Grupo CCred" class="" width='200' height='180'></center>
+              <center><img src="img/LogosCCRED/grupoccred.png" alt="Grupo CCred" class="" width='200' height='160'></center>
               <br>
               <h4><center><font face="arial" color="#BCBDCB">Ingresa tus datos para acceder al contenido exclusivo de
               Grupo CCred.</font></center></h4>

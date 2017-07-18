@@ -76,7 +76,7 @@
                             <a href="clientes.html">Clientes</a>
                         </li>
                         <li>
-                            <a href="#">Galería</a>
+                            <a href="galeria.html">Galería</a>
                         </li>
                         <li>
                             <a href="productos.html">Productos</a>
@@ -88,7 +88,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                       <li>
-                        <a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;Registro</a>
+                        <a href="registro.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Registro</a>
                       </li>
                       <li>
                         <a href="login.php"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Entrar</a>
