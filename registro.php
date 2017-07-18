@@ -109,11 +109,12 @@
     <div class="container-fluid">
       <fieldset>
         <legend><h1>Registro</h1></legend>
+      </fieldset>
           <h3>Ingresa tus datos y podrás acceder al contenido exclusivo de Grupo CCred.</h3>
-        </fieldset>
-    </div>
+
     <br>
     <br>
+
     <div class="container">
       <form class="form-horizontal" action="envioregistro.php" method="post">
         <div class="form-group">
@@ -177,6 +178,7 @@
       </form>
     </div>
 
+</div>
 
     <!-- inicia footer -->
 
