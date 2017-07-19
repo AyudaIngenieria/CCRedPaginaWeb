@@ -76,7 +76,7 @@
                   </button>
                   <a class="navbar-brand" href="#">Grupo CCred</a>
               </div>
-
+  
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-center">
@@ -107,7 +107,7 @@
                       <li>
                           <a href="galeria.html">Galería</a>
                       </li>
-                      <li class="active">
+                      <li>
                           <a href="productos.html">Productos</a>
                       </li>
                       <li>
@@ -116,11 +116,11 @@
                   </ul>
 
                   <ul class="nav navbar-nav navbar-right">
-                    <li>
-                      <a href="registro.php"><span class="glyphicon glyphicon-user"></span>&nbsp;Registro</a>
+                    <li class="active">
+                      <a href="tiendaccred.php"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Tienda</a>
                     </li>
                     <li>
-                      <a href="login.php"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Entrar</a>
+                      <a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Salir</a>
                     </li>
                   </ul>
                 </div>
