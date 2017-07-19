@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Carrito de compras</title>
+    <title>Confirma tu pedido</title>
 
     <!-- Bootstrap Core CSS -->
 
@@ -112,7 +112,7 @@
 <br>
 
 <form id="form1" name="form1" method="post" action="finalizarpedido.php">
-<h2>Confirmar Pedido
+<h2>Confirmar pedido
 </h2>
 <p>Verifique que los datos de su compra sean correctos, y a continuación, ingrese sus datos.</p>
 
